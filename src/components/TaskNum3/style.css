@@ -1,0 +1,53 @@
+.mainBlock {
+  width: 100vw;
+  height: 100vh;
+}
+.navLinks {
+  width: 25vw;
+  display: flex;
+  color: blue;
+  text-align: center;
+  margin: 12vh 0 20px 245px;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.navLinks a {
+  text-decoration: none;
+  color: rgb(50, 138, 209);
+  border-bottom: 1px dashed rgb(50, 138, 209);
+}
+
+.navLinks a:hover {
+  cursor: pointer;
+  border-bottom: none;
+  color: rgba(27, 27, 27, 0.568);
+}
+
+.navBlock {
+  display: flex;
+  justify-content: center;
+}
+.bodyBlock {
+  display: flex;
+  justify-content: center;
+}
+.item img {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 200px;
+  padding: 0 25px;
+}
+
+.item h1 {
+  font-weight: 600;
+
+  width: 300px;
+  padding: 0 25px;
+  font-size: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
