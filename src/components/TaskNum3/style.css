@@ -1,6 +1,6 @@
 .mainBlock {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .navLinks {
   width: 25vw;
@@ -23,7 +23,9 @@
   color: rgba(27, 27, 27, 0.568);
 }
 
+/* NavBlock start style */
 .navBlock {
+  border-color: #fafafa;
   display: flex;
   justify-content: center;
 }
@@ -31,23 +33,65 @@
   display: flex;
   justify-content: center;
 }
+.item {
+  padding: 0 25px;
+  width: 320px;
+}
 .item img {
   display: flex;
   flex-direction: row;
-  width: 320px;
   height: 200px;
-  padding: 0 25px;
+  width: 320px;
 }
 
 .item h1 {
+  color: #231f20;
   font-weight: 600;
-
-  width: 300px;
-  padding: 0 25px;
-  font-size: 22px;
+  margin: 0 0 10px;
+  font-size: 25px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+.item h2 {
+  font-size: 15px;
+  font-weight: 300;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.item h3 {
+  font-size: 13px;
+  color: #898989;
+  font-weight: 300;
+}
+.bottomLineInfo a {
+  margin-left: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: 300;
+  color: #0a84ff;
+}
+.bottomLineInfo {
+  overflow: hidden;
+  text-align: right;
+  padding: 0 240px;
+  vertical-align: middle;
+}
+
+.bottomLineInfo:before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 88%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-left: -10%;
 }
