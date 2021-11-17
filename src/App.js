@@ -1,7 +1,11 @@
-import Main from './pages/main/Main';
+import Main from "./Main/Main";
 
 const App = () => {
-	return <Main />;
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 };
 
 export default App;
