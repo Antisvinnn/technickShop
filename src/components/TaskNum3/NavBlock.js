@@ -5,7 +5,7 @@ const NavBlock = () => {
     <div>
       <div className="navBlock">
         <div className="bodyBlock">
-          <div className="item">
+          <div className="itemNavBlock">
             <a href="$">
               <img
                 src="https://img.stereo.ru/news/2020/9/376e84ca3ad11f9fcdd0b55f6718c7c7.jpg"
@@ -19,7 +19,7 @@ const NavBlock = () => {
             </h2>
             <h3>13.10.2021</h3>
           </div>
-          <div className="item">
+          <div className="itemNavBlock">
             <a href="$">
               <img
                 src="https://i.rtings.com/assets/products/lgfIvCFh/bose-soundbar-500/1-front-large.jpg"
@@ -33,7 +33,7 @@ const NavBlock = () => {
             <h2>BOSE HOME SPEAKER 500 - мощь стереосистемы в моноблоке</h2>
             <h3>13.10.2021</h3>
           </div>
-          <div className="item">
+          <div className="itemNavBlock">
             <a href="$">
               <img
                 src="https://img.ej.by/files/362/573/status_otkrytie.jpg"
@@ -50,7 +50,7 @@ const NavBlock = () => {
             </h2>
             <h3>13.10.2021</h3>
           </div>
-          <div className="item">
+          <div className="itemNavBlock">
             <a href="$">
               <img
                 src="https://img1.infobank.by/images/imagesindb/iphone291021.jpg.aspx"
@@ -64,7 +64,12 @@ const NavBlock = () => {
         </div>
       </div>
       <div className="bottomLineInfo">
-        <a href="$">Все новости магазина</a>
+        <a href="$">
+          Все новости магазина
+          <div className="circleBottomLine">
+            <div className="arrowBottomLine"></div>
+          </div>
+        </a>
       </div>
     </div>
   );
