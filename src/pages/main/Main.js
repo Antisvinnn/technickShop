@@ -1,16 +1,12 @@
-import Header from "../../components/header/Header";
-import MainContent from "../../components/mainContent/MainContent";
-import Footer from "../../components/footer/Footer";
-import "./style.css";
+import Footer from '../../components/footer/Footer';
+import style from './style.module.css';
 
 const Main = () => {
-  return (
-    <div className="container">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
-  );
+	return (
+		<div className={style.container}>
+			<Footer />
+		</div>
+	);
 };
 
 export default Main;
