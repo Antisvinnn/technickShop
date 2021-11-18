@@ -8,7 +8,7 @@ const Footer = () => {
 			</div>
 			<div className={style.infoBlockLine}>
 				<div className={style.column}>
-					<span className={style.firstColumnTitle}>Mac</span>
+					<span className={style.firstColumnTitle}>uih</span>
 					<span className={style.firstColumnPoint}>MacBook Pro</span>
 					<span className={style.firstColumnPoint}>MacBook Air</span>
 					<span className={style.firstColumnPoint}>iMac</span>
