@@ -1,5 +1,6 @@
 import NavBlock from "./NavBlock";
 import NavLinks from "./NavLinks";
+import IStoreParthner from "./IStoreParthner";
 import "./style.css";
 
 const IStoreInfo = () => {
@@ -7,6 +8,7 @@ const IStoreInfo = () => {
     <div className="mainBlock">
       <NavLinks />
       <NavBlock />
+      <IStoreParthner />
     </div>
   );
 };
