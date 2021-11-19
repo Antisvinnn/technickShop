@@ -1,4 +1,3 @@
-
 import NavBlock from "../navBlcoks/NavBlock";
 import NavLinks from "../navLinks/NavLinks";
 import IStoreParthner from "../storeParthner/IStoreParthner";
@@ -12,5 +11,6 @@ const IStoreInfo = () => {
       <IStoreParthner />
     </div>
   );
+};
 
 export default IStoreInfo;
