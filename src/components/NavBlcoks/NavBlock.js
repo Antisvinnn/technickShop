@@ -2,7 +2,7 @@ import "./style.css";
 
 const NavBlock = () => {
   return (
-    <div>
+    <>
       <div className="navBlock">
         <div className="bodyBlock">
           <div className="itemNavBlock">
@@ -71,7 +71,7 @@ const NavBlock = () => {
           </div>
         </a>
       </div>
-    </div>
+    </>
   );
 };
 
