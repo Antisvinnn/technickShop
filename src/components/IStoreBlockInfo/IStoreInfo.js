@@ -1,11 +1,11 @@
 import NavBlock from "../navBlcoks/NavBlock";
 import NavLinks from "../navLinks/NavLinks";
 import IStoreParthner from "../storeParthner/IStoreParthner";
-import "./style.css";
+import style from "./style.module.css";
 
 const IStoreInfo = () => {
   return (
-    <div className="mainBlock">
+    <div className={style.mainBlock}>
       <NavLinks />
       <NavBlock />
       <IStoreParthner />
