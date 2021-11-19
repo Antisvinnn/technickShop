@@ -1,16 +1,16 @@
-import NavBlock from '../NavBlcoks/NavBlock';
-import NavLinks from '../NavLinks/NavLinks';
-import IStoreParthner from '../StoreParthner/IStoreParthner';
-import './style.css';
+
+import NavBlock from "../navBlcoks/NavBlock";
+import NavLinks from "../navLinks/NavLinks";
+import IStoreParthner from "../storeParthner/IStoreParthner";
+import style from "./style.module.css";
 
 const IStoreInfo = () => {
-	return (
-		<div className='mainBlock'>
-			<NavLinks />
-			<NavBlock />
-			<IStoreParthner />
-		</div>
-	);
-};
+  return (
+    <div className={style.mainBlock}>
+      <NavLinks />
+      <NavBlock />
+      <IStoreParthner />
+    </div>
+  );
 
 export default IStoreInfo;
