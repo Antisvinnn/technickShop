@@ -1,7 +1,6 @@
-
-import NavBlock from "../navBlcoks/NavBlock";
-import NavLinks from "../navLinks/NavLinks";
-import IStoreParthner from "../storeParthner/IStoreParthner";
+import NavBlock from "../NavBlcoks/NavBlock";
+import NavLinks from "../NavLinks/NavLinks";
+import IStoreParthner from "../StoreParthner/IStoreParthner";
 import style from "./style.module.css";
 
 const IStoreInfo = () => {
@@ -12,5 +11,6 @@ const IStoreInfo = () => {
       <IStoreParthner />
     </div>
   );
+};
 
 export default IStoreInfo;
