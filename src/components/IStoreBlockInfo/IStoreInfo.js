@@ -1,7 +1,6 @@
-import NavBlock from "./NavBlock";
-import NavLinks from "./NavLinks";
-import IStoreParthner from "./IStoreParthner";
-import "./style.css";
+import NavBlock from "../NavBlcoks/NavBlock";
+import NavLinks from "../NavLinks/NavLinks";
+import IStoreParthner from "../StoreParthner/IStoreParthner";
 
 const IStoreInfo = () => {
   return (

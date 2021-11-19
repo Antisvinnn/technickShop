@@ -1,4 +1,4 @@
-import IStoreInfo from "../components/TaskNum3/IStoreInfo";
+import IStoreInfo from "../components/IStoreBlockInfo/IStoreInfo";
 
 const Main = () => {
   return (
