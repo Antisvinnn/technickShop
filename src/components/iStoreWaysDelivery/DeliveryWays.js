@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-
+import Contacts from "../iStoreContancts/Contacts";
 const DeliveryWays = () => {
   return (
     <>
@@ -82,6 +82,7 @@ const DeliveryWays = () => {
           </div>
         </div>
       </div>
+      <Contacts />
     </>
   );
 };
