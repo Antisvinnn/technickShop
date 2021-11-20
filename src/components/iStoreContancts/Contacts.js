@@ -3,12 +3,11 @@ import style from "./style.module.css";
 const Contacts = () => {
   return (
     <div className={style.contactsBody}>
-      <div>
-        <img
-          src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:370/plain/s3://files/7/foot-info-image-by-1.png@webp"
-          alt="not found"
-        ></img>
-      </div>
+      <img
+        src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:370/plain/s3://files/7/foot-info-image-by-1.png@webp"
+        alt="not found"
+      ></img>
+
       <div className={style.headAdress}>
         <h1>Остались вопросы?</h1>
         <h2>
