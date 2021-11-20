@@ -1,0 +1,107 @@
+.deliveryBlock {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+.serviceBlock {
+  width: 320px;
+  height: 160px;
+  padding: 0 15px;
+}
+.serviceBlock img {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 45px;
+  margin: 0 0 10px;
+}
+.serviceBlock h3 {
+  font-size: 15px;
+  color: #898989;
+  margin: 0 auto;
+  font-weight: 300;
+}
+.serviceBlock a {
+  font-size: 20px;
+  font-weight: 300;
+
+  color: #0a84ff;
+}
+.deliveryBlock::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-top: -80px;
+}
+.deliveryBlock::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-top: 240px;
+}
+.userInfo {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.infoMessage {
+  padding-left: 200px;
+}
+.infoMessage h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #231f20;
+  margin: 0 auto;
+}
+.infoMessage h2 {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 auto;
+  color: #898989;
+}
+.userName {
+  padding: 0 15px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+}
+.email {
+  padding: 0 15px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 250px;
+  height: 40px;
+}
+
+.subscribe {
+  margin: 0 0 0 10px;
+  padding: 8px 40px;
+  border: 1px solid #0a84ff;
+  color: #0a84ff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.subscribe:hover {
+  cursor: pointer;
+  background-color: #0a84ff;
+  color: white;
+}
+.politics {
+  padding-top: 10px;
+}
+.politics a {
+  text-decoration: none;
+  color: #0a84ff;
+}
