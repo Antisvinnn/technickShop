@@ -18,3 +18,15 @@
 .wrapperForDevices img {
   margin-right: 25px;
 }
+.mainContent {
+  font-size: 20px;
+  color: #231f20;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.descriptionContent {
+  color: #231f20;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
