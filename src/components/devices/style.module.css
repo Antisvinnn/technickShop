@@ -63,10 +63,6 @@
   transform: rotate(45deg);
 }
 
-.wrapperContainerSecondLine {
-  height: 800px;
-  width: 100%;
-}
 .containerSecondLine {
   height: 70%;
   margin: 80px;
@@ -99,42 +95,30 @@
   width: 70%;
   margin: auto auto;
 }
-.ipadContent {
+.deviceContentOfSecondLine {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
 }
-.ipadContent img {
+.ipadImage {
   height: 40%;
   width: 80%;
   margin: auto auto;
 }
-.cleverHomeContent {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-}
-.cleverHomeContent img {
+
+.cleverHomeImage {
   height: 60%;
   width: 80%;
   margin: 0 auto;
 }
-.macMiniContent {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-}
-.macMiniContent img {
+
+.macMiniImage {
   height: 20%;
   width: 80%;
   margin: auto auto;
 }
-.acsessContent {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-}
-.acsessContent img {
+
+.acsessImage {
   height: 40%;
   width: 80%;
   margin: 0 auto;
