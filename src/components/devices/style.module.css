@@ -1,6 +1,3 @@
-.wrapperContainerFirstLine {
-  padding: 0 200px;
-}
 .containerFirstLine {
   display: grid;
   grid-gap: 6px;
@@ -65,26 +62,20 @@
   border-right: 2px solid #0a84ff;
   transform: rotate(45deg);
 }
-.wrapperContainerSecondLine {
-  padding: 100px 200px;
-}
 
+.wrapperContainerSecondLine {
+  height: 800px;
+  width: 100%;
+}
 .containerSecondLine {
+  height: 70%;
+  margin: 80px;
   display: grid;
-  grid-gap: 6px;
+  grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
 }
 
-.containerSecondLine a {
-  padding-bottom: 30px;
-}
-
-.wrapperForSecondDevices {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-}
 .iphoneContent {
   background-color: #f6f6f6;
   display: flex;
@@ -92,17 +83,31 @@
   grid-row: 1 / 3;
   grid-column: 1 / 2;
 }
+.iphoneContent img {
+  height: 50%;
+  width: 65%;
+  margin: auto auto;
+}
 .macContent {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
-
   grid-column: 2 / 4;
+}
+.macContent img {
+  height: 35%;
+  width: 70%;
+  margin: auto auto;
 }
 .ipadContent {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
+}
+.ipadContent img {
+  height: 40%;
+  width: 80%;
+  margin: auto auto;
 }
 .cleverHomeContent {
   background-color: #f6f6f6;
@@ -110,13 +115,19 @@
   flex-direction: column;
 }
 .cleverHomeContent img {
-  height: 250px;
-  width: 250px;
+  height: 60%;
+  width: 80%;
+  margin: 0 auto;
 }
 .macMiniContent {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
+}
+.macMiniContent img {
+  height: 20%;
+  width: 80%;
+  margin: auto auto;
 }
 .acsessContent {
   background-color: #f6f6f6;
@@ -124,6 +135,7 @@
   flex-direction: column;
 }
 .acsessContent img {
-  height: 230px;
-  width: 330px;
+  height: 40%;
+  width: 80%;
+  margin: 0 auto;
 }

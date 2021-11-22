@@ -3,69 +3,66 @@ import style from "./style.module.css";
 const Devices = () => {
   return (
     <div>
-      <div className={style.wrapperContainerFirstLine}>
-        <div className={style.containerFirstLine}>
-          <div className={style.wrapperForDevices}>
-            <img
-              src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:210:210:0/bg:f6f6f6/plain/s3://files/7/i-store-block-8-by-image-1.jpg@jpeg"
-              alt="not found"
-            />
+      <div className={style.containerFirstLine}>
+        <div className={style.wrapperForDevices}>
+          <img
+            src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:210:210:0/bg:f6f6f6/plain/s3://files/7/i-store-block-8-by-image-1.jpg@jpeg"
+            alt="not found"
+          />
 
-            <div className={style.deviceContent}>
-              <p className={style.mainContent}>AirPods.</p>
-              <p className={style.descriptionContent}>
-                Никаких проводов.Никаких сложностей
-              </p>
-              <a href="$" className={style.reference}>
-                Купить
-                <div className={style.circleBottomLine}>
-                  <div className={style.arrowBottomLine}></div>
-                </div>
-              </a>
-            </div>
+          <div className={style.deviceContent}>
+            <p className={style.mainContent}>AirPods.</p>
+            <p className={style.descriptionContent}>
+              Никаких проводов.Никаких сложностей
+            </p>
+            <a href="$" className={style.reference}>
+              Купить
+              <div className={style.circleBottomLine}>
+                <div className={style.arrowBottomLine}></div>
+              </div>
+            </a>
           </div>
+        </div>
 
-          <div className={style.wrapperForDevices}>
-            <img
-              src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:210:210:0/bg:f6f6f6/plain/s3://files/7/main-catalog-banner-iphone-case.png@jpeg"
-              alt="not found"
-            />
+        <div className={style.wrapperForDevices}>
+          <img
+            src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:210:210:0/bg:f6f6f6/plain/s3://files/7/main-catalog-banner-iphone-case.png@jpeg"
+            alt="not found"
+          />
 
-            <div className={style.deviceContent}>
-              <p className={style.mainContent}>
-                Чехлы на IPhone 13 и Iphone 13 Pro
-              </p>
-              <p className={style.descriptionContent}>Только идеальные пары</p>
-              <a href="$" className={style.reference}>
-                Заказать
-                <div className={style.circleBottomLine}>
-                  <div className={style.arrowBottomLine}></div>
-                </div>
-              </a>
-            </div>
+          <div className={style.deviceContent}>
+            <p className={style.mainContent}>
+              Чехлы на IPhone 13 и Iphone 13 Pro
+            </p>
+            <p className={style.descriptionContent}>Только идеальные пары</p>
+            <a href="$" className={style.reference}>
+              Заказать
+              <div className={style.circleBottomLine}>
+                <div className={style.arrowBottomLine}></div>
+              </div>
+            </a>
           </div>
-          <div className={style.wrapperForDevices}>
-            <img
-              src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:210:210:0/bg:f6f6f6/plain/s3://files/7/i-store-block-8-by-image-2.png@jpeg"
-              alt="not found"
-            />
+        </div>
+        <div className={style.wrapperForDevices}>
+          <img
+            src="https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:210:210:0/bg:f6f6f6/plain/s3://files/7/i-store-block-8-by-image-2.png@jpeg"
+            alt="not found"
+          />
 
-            <div className={style.deviceContent}>
-              <p className={style.mainContent}>Карта клиента.</p>
-              <p className={style.descriptionContent}>
-                Совершайте покупки и получайте бонусы на счет
-              </p>
-              <a href="$" className={style.reference}>
-                Подробнее
-                <div className={style.circleBottomLine}>
-                  <div className={style.arrowBottomLine}></div>
-                </div>
-              </a>
-            </div>
+          <div className={style.deviceContent}>
+            <p className={style.mainContent}>Карта клиента.</p>
+            <p className={style.descriptionContent}>
+              Совершайте покупки и получайте бонусы на счет
+            </p>
+            <a href="$" className={style.reference}>
+              Подробнее
+              <div className={style.circleBottomLine}>
+                <div className={style.arrowBottomLine}></div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-
       <div className={style.wrapperContainerSecondLine}>
         <div className={style.containerSecondLine}>
           <div className={style.iphoneContent}>
