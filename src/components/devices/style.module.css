@@ -1,0 +1,20 @@
+.wrapperContainerFirstLine {
+  padding: 0 200px;
+}
+.containerFirstLine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.containerFirstLine a {
+  text-decoration: none;
+  color: 0a84ff;
+}
+.wrapperForDevices {
+  background-color: #f6f6f6;
+
+  display: flex;
+}
+.wrapperForDevices img {
+  margin-right: 25px;
+}

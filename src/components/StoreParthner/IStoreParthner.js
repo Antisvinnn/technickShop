@@ -1,14 +1,14 @@
-import "./style.css";
+import style from "./style.module.css";
 
 const IStoreParthner = () => {
   return (
-    <div className="iParthner">
+    <div className={style.iParthner}>
       <img
         src="https://appleinsider.ru/wp-content/uploads/2011/07/store2.jpg"
         alt="not found"
       />
       <div>
-        <div className="headParthner">
+        <div className={style.headParthner}>
           i-Store (айСтор) – официальный партнёр компании Apple в Беларуси со
           статусом Apple Premium Reseller.
         </div>
@@ -27,8 +27,8 @@ const IStoreParthner = () => {
         <div>
           <a href="$">
             Показать полностью
-            <div className="circleBottomLine">
-              <div className="arrowBottomLine"></div>
+            <div className={style.circleBottomLine}>
+              <div className={style.arrowBottomLine}></div>
             </div>
           </a>
         </div>

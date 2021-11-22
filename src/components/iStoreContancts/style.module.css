@@ -1,0 +1,85 @@
+.contactsBody {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 0 200px;
+  background-color: #fafafa;
+}
+.contactsBody img {
+  height: 100%;
+}
+.storeAdress {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px 1px;
+  padding-bottom: 90px;
+}
+.storeAdress > h3 {
+  /* font-family: Open_Sans_Condensed; */
+  font-size: 17px;
+  color: #231f20;
+  font-weight: 400;
+}
+.storeAdress h3 > span {
+  font-size: 14px;
+}
+.storePhone {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+}
+.storePhone:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 200px;
+  background-color: #e0e0e0;
+  margin: -22px 0 0 50px;
+}
+.storePhone a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #007bff;
+}
+.feedback {
+  padding: 8px 15px;
+  border: 1px solid #0a84ff;
+  color: #0a84ff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.feedback:hover {
+  cursor: pointer;
+  background-color: #0a84ff;
+  color: white;
+}
+.ourMail {
+  color: #bababa;
+  font-size: 15px;
+  margin: 0 0 0 15px;
+}
+.ourMail > a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #007bff;
+}
+.headAdress > h1 {
+  font-size: 24px;
+  color: #231f20;
+  margin: 0 0 5px;
+  font-weight: 400;
+}
+.headAdress > h2 {
+  font-size: 15px;
+  color: #bababa;
+  font-weight: 300;
+  margin: 0;
+}
+.headAdress {
+  padding-right: 300px;
+}
