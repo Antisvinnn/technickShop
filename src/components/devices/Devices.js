@@ -92,7 +92,7 @@ const Devices = () => {
             alt="not found"
           />
         </div>
-        <div className={style.deviceContentOfSecondLine}>
+        <div id={style.ipad} className={style.deviceContentOfSecondLine}>
           <p className={style.mainContent}>IPad</p>
           <p className={style.descriptionContent}>Товаров: 24</p>
           <a href="$" className={style.reference}>
