@@ -4,20 +4,16 @@ import style from "./style.module.css";
 const Header = () => {
   return (
     <>
-
-      <Link to="/blackFriday">
+      <Link to="/blackFriday" className={style.link}>
         <div className={style.topHead}>
-          <a href="$">
-            Не открадывайте мечты на потом: Black Friday в i-Store.
-          </a>
-          <a href="$">Выгода до 1570 BYN</a>
-          <a href="$">Подробнее</a>
+          <span>Не открадывайте мечты на потом: Black Friday в i-Store.</span>
+          <span>Выгода до 1570 BYN</span>
+          <span>Подробнее</span>
         </div>
       </Link>
       <div className={style.headContacts}>
         <Link to="/terms-of-sale">Оплата и доставка</Link>
-       
-        
+
         <Link to="/information">Адреса магазинов</Link>
         <a href="$">Кредит</a>
         <a href="$">Юр. лицам </a>
