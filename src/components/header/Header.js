@@ -4,6 +4,7 @@ import style from "./style.module.css";
 const Header = () => {
   return (
     <>
+
       <Link to="/blackFriday">
         <div className={style.topHead}>
           <a href="$">
@@ -15,7 +16,9 @@ const Header = () => {
       </Link>
       <div className={style.headContacts}>
         <Link to="/terms-of-sale">Оплата и доставка</Link>
-        <a href="$">Адреса магазинов</a>
+       
+        
+        <Link to="/information">Адреса магазинов</Link>
         <a href="$">Кредит</a>
         <a href="$">Юр. лицам </a>
         <div className={style.workTime}>
