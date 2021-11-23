@@ -4,13 +4,20 @@ import style from "./style.module.css";
 const Header = () => {
   return (
     <>
-      <div className={style.topHead}>
-        <a href="$">Не открадывайте мечты на потом: Black Friday в i-Store.</a>
-        <a href="$">Выгода до 1570 BYN</a>
-        <a href="$">Подробнее</a>
-      </div>
+
+      <Link to="/blackFriday">
+        <div className={style.topHead}>
+          <a href="$">
+            Не открадывайте мечты на потом: Black Friday в i-Store.
+          </a>
+          <a href="$">Выгода до 1570 BYN</a>
+          <a href="$">Подробнее</a>
+        </div>
+      </Link>
       <div className={style.headContacts}>
-        <a href="$">Оплата и доставка</a>
+        <Link to="/terms-of-sale">Оплата и доставка</Link>
+       
+        
         <Link to="/information">Адреса магазинов</Link>
         <a href="$">Кредит</a>
         <a href="$">Юр. лицам </a>
