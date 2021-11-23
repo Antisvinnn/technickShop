@@ -65,7 +65,9 @@
 
 .containerSecondLine {
   height: 70%;
-  margin: 80px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
@@ -73,6 +75,7 @@
 }
 
 .iphoneContent {
+  padding: 20px;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -85,6 +88,7 @@
   margin: auto auto;
 }
 .macContent {
+  padding: 20px;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -96,6 +100,8 @@
   margin: auto auto;
 }
 .deviceContentOfSecondLine {
+  padding: 20px;
+
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
