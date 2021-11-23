@@ -13,12 +13,15 @@ const Header = () => {
         <a href="$">Адреса магазинов</a>
         <a href="$">Кредит</a>
         <a href="$">Юр. лицам </a>
-        <div>
+        <div className={style.workTime}>
           <img
             src="https://cdn0.iconfinder.com/data/icons/eon-basketball-i-1/32/time_clock_deadline_watch-256.png"
             alt="not found"
           ></img>
-          9:00 - 21:00 (пн-пт); 10:00 - 19:00 (сб-вс)
+          <span>
+            9:00 - 21:00 (пн-пт);
+            <br /> 10:00 - 19:00 (сб-вс)
+          </span>
         </div>
         <a href="$">
           <img
