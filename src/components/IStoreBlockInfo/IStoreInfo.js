@@ -1,6 +1,7 @@
 import NavBlock from "../NavBlcoks/NavBlock";
 import NavLinks from "../NavLinks/NavLinks";
 import IStoreParthner from "../StoreParthner/IStoreParthner";
+
 import style from "./style.module.css";
 
 const IStoreInfo = () => {
