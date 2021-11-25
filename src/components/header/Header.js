@@ -15,7 +15,7 @@ const Header = () => {
         <Link to="/terms-of-sale">Оплата и доставка</Link>
 
         <Link to="/information">Адреса магазинов</Link>
-        <a href="$">Кредит</a>
+        <Link to="/information/installment-and-credit">Кредит</Link>
         <a href="$">Юр. лицам </a>
         <div className={style.workTime}>
           <img
