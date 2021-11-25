@@ -6,8 +6,8 @@ const InfoRoadMap = () => {
   return (
     <>
       <Switch>
+        <Route path="/information/about" component={About} />
         <Route path="/information" component={Information} />
-        <Route path="/about" component={About} />
       </Switch>
     </>
   );

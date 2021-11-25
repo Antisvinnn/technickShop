@@ -14,7 +14,7 @@ const Header = () => {
       <div className={style.headContacts}>
         <Link to="/terms-of-sale">Оплата и доставка</Link>
 
-        <Link to="/information">Адреса магазинов</Link>
+        <Link to="/information/about">Адреса магазинов</Link>
         <a href="$">Кредит</a>
         <a href="$">Юр. лицам </a>
         <div className={style.workTime}>
