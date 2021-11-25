@@ -1,0 +1,110 @@
+.aboutHead {
+  display: flex;
+  padding-left: 200px;
+  height: 80px;
+  background-color: rgb(218, 214, 214);
+  align-items: flex-end;
+  font-size: 40px;
+  font-weight: 300;
+  color: #231f20;
+  padding-bottom: 10px;
+}
+.aboutHead::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  height: 2px;
+  background-color: #bebaba;
+  margin-bottom: 50px;
+}
+
+.blockAbout {
+  margin-left: 200px;
+  width: 70%;
+}
+.blockAbout > h1 {
+  font-size: 24px;
+  color: #231f20;
+  font-weight: 300;
+}
+.blockAbout h2 {
+  font-size: 15px;
+  color: #231f20;
+  font-weight: 500;
+}
+.blockAbout h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #231f20;
+}
+.blockAbout span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #231f20;
+}
+.blockAbout a {
+  text-decoration: none;
+  color: #231f20;
+  font-weight: 400;
+}
+
+.headTextInfo {
+  font-weight: 400;
+  font-size: 24px;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.userInfo > input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 10px;
+  padding: 20px 15px;
+  width: 40%;
+}
+.comment {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 20px 15px;
+  width: 40%;
+  height: 80px;
+}
+.politics {
+  margin-right: 220px;
+  padding: 15px 0;
+}
+.politics a {
+  text-decoration: none;
+  color: #0a84ff;
+}
+
+.send {
+  margin: 0 0 20px 10px;
+  padding: 8px 40px;
+  border: 1px solid #0a84ff;
+  color: #0a84ff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.send:hover {
+  cursor: pointer;
+  background-color: #0a84ff;
+  color: white;
+}
+.userInfo > img {
+  width: 99vw;
+  height: 60vh;
+}

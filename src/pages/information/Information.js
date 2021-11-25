@@ -9,9 +9,9 @@ const Information = () => {
         <Link to="/information">
           <li>Информация</li>
         </Link>
-        <a href="$">
+        <Link to="/about">
           <li>О магазине</li>
-        </a>
+        </Link>
 
         <a href="$">
           <li>Условия продажи</li>
