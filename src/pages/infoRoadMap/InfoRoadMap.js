@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router";
-import IStoreInfo from "../../components/IStoreBlockInfo/IStoreInfo";
+
 import Information from "../information/Information";
 
 const InfoRoadMap = () => {
