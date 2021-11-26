@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router";
+import Credits from "../credits/Credits";
 import Information from "../information/Information";
 
 const InfoRoadMap = () => {

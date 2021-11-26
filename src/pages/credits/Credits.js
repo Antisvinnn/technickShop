@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.css";
+import map from "../../assets/images/credits/map.png";
+import house from "../../assets/images/credits/pngegg.png";
 
 const Credits = () => {
   return (
     <>
       <div class={style.container}>
         <div className={style.nav}>
-          <img className={style.house} src="./pngegg.png" alt="not found" />
+          <img className={style.house} src={house} alt="not found" />
           <div class={style.arrowBottomLine}></div>
-          <Link to="//information">информация</Link>
+          <Link to="/information">информация</Link>
           <div class={style.arrowBottomLine}></div>
           <a>кредит</a>
         </div>
@@ -169,7 +171,7 @@ const Credits = () => {
         </div>
         <div className={style.map}>
           <p>Где можно приобрести товар в кредит от Статусбанк:</p>
-          <img src="./map.png" />
+          <img src={map} />
           <div className={style.adressOfShops}>
             <p>Магазин i-Store Ленина, 5</p>
             <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
