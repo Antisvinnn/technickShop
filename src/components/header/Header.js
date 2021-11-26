@@ -13,7 +13,8 @@ const Header = () => {
       </Link>
       <div className={style.headContacts}>
         <Link to="/terms-of-sale">Оплата и доставка</Link>
-
+        <Link to="/information/about">Адреса магазинов</Link>
+        <a href="$">Кредит</a>
         <Link to="/information">Адреса магазинов</Link>
         <Link to="/information/installment-and-credit">Кредит</Link>
         <a href="$">Юр. лицам </a>

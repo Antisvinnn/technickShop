@@ -8,6 +8,7 @@ import Page404 from "./pages/page404/Page404";
 import TermsOfSale from "./pages/terms-of-sale/TermsOfSale";
 
 import InfoRoadMap from "./pages/infoRoadMap/InfoRoadMap";
+import About from "./pages/about/About";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/blackFriday" component={BlackFriday} />
         <Route path="/terms-of-sale" component={TermsOfSale} />
         <Route path="/information" component={InfoRoadMap} />
+        <Route path="/about" component={About} />
         <Route path="*" component={Page404} />
       </Switch>
       <Footer />
