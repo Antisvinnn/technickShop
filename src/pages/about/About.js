@@ -3,7 +3,10 @@ import style from "./style.module.css";
 const About = () => {
   return (
     <>
-      <span className={style.aboutHead}>О магазине</span>
+      <div className={style.headBlock}>
+        <span className={style.aboutHead}>О магазине</span>
+      </div>
+
       <div className={style.blockAbout}>
         <h1>
           i-Store (айСтор) – официальный партнёр компании Apple в Беларуси со
@@ -43,21 +46,21 @@ const About = () => {
         </h2>
         <h2>
           Green City
-          <span>ул. Притыцкого 156 |</span>
+          <span> ул. Притыцкого 156 |</span>
           <a href="$">+375 (44) 5-597-954</a>
           <br />
-          <span>Пн – Вс: 09:00 – 21:00</span>
+          <span> Пн – Вс: 09:00 – 21:00</span>
         </h2>
         <h2>
           Dana Mall
-          <span>ул. Петра Мстиславца 11 |</span>
+          <span> ул. Петра Мстиславца 11 |</span>
           <a href="$">+375 (44) 5-597-445</a>
           <br />
-          <span>Пн – Вс: 09:00 – 21:00</span>
+          <span> Пн – Вс: 09:00 – 21:00</span>
         </h2>
         <h2>
           Galleria Minsk
-          <span>пр-т Победителей, 9 |</span>
+          <span> пр-т Победителей, 9 |</span>
           <a href="$">+375 (44) 5-587-633</a>
           <br />
           <span>Пн – Вс: 10:00 – 22:00</span>
