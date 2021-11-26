@@ -1,24 +1,31 @@
+import { Link } from "react-router-dom";
 import style from "./style.module.css";
 
 const Header = () => {
   return (
     <>
-      <div className={style.topHead}>
-        <a href="$">Не открадывайте мечты на потом: Black Friday в i-Store.</a>
-        <a href="$">Выгода до 1570 BYN</a>
-        <a href="$">Подробнее</a>
-      </div>
+      <Link to="/blackFriday" className={style.link}>
+        <div className={style.topHead}>
+          <span>Не открадывайте мечты на потом: Black Friday в i-Store.</span>
+          <span>Выгода до 1570 BYN</span>
+          <span>Подробнее</span>
+        </div>
+      </Link>
       <div className={style.headContacts}>
-        <a href="$">Оплата и доставка</a>
-        <a href="$">Адреса магазинов</a>
+        <Link to="/terms-of-sale">Оплата и доставка</Link>
+
+        <Link to="/information">Адреса магазинов</Link>
         <a href="$">Кредит</a>
         <a href="$">Юр. лицам </a>
-        <div>
+        <div className={style.workTime}>
           <img
             src="https://cdn0.iconfinder.com/data/icons/eon-basketball-i-1/32/time_clock_deadline_watch-256.png"
             alt="not found"
           ></img>
-          9:00 - 21:00 (пн-пт); 10:00 - 19:00 (сб-вс)
+          <span>
+            9:00 - 21:00 (пн-пт);
+            <br /> 10:00 - 19:00 (сб-вс)
+          </span>
         </div>
         <a href="$">
           <img
@@ -46,7 +53,7 @@ const Header = () => {
           src="https://cdn2.iconfinder.com/data/icons/lightly-icons/30/search-240.png"
           alt="not found"
         ></img>
-        <a href="$">Mac</a>
+        <Link to="/mac">Mac</Link>
         <a href="$">iPad</a>
         <a href="$">iPhone</a>
         <a href="$">Watch</a>
@@ -79,13 +86,13 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <a href="$">
+      <Link to="/">
         <img
           className={style.news}
           src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:1400:600:0/bg:000000/q:100/plain/s3://complex-images/7/2714/2100-ru3.png@jpeg"
           alt="not found"
         ></img>
-      </a>
+      </Link>
     </>
   );
 };
