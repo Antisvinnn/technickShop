@@ -4,7 +4,10 @@ import style from "./style.module.css";
 const Information = () => {
   return (
     <>
-      <span className={style.infoHead}>Информация</span>
+      <div className={style.headBlock}>
+        <span className={style.infoHead}>Информация</span>
+      </div>
+
       <div className={style.infoLinks}>
         <Link to="/information">
           <li>Информация</li>
