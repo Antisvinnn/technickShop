@@ -3,7 +3,6 @@ import Credits from "../credits/Credits";
 import Information from "../information/Information";
 import About from "../about/About";
 import TermsOfSale from "../terms-of-sale/TermsOfSale";
-import LegalEnts from "../legalEntities/LegalEnt";
 import LegalEnt from "../legalEntities/LegalEnt";
 
 const InfoRoadMap = () => {
