@@ -1,0 +1,148 @@
+.container {
+  background-color: #f6f6f6;
+}
+.nav {
+  min-height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 10px;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 0.5px solid silver;
+}
+
+.house {
+  height: 15px;
+  width: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+.arrowBottomLine {
+  content: "";
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: -2px;
+  width: 2px;
+  height: 2px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+  padding: 1px;
+  margin: 4px;
+}
+.wordCredit {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+.wordCredit h1 {
+  margin: 10px 0;
+  font-weight: 200;
+}
+.orderOfProduct {
+  font-size: 20px;
+  width: 70%;
+  margin: 30px auto;
+  font-weight: 600;
+}
+.wrapperOrderProduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid silver;
+}
+
+.firstImage {
+  height: 55px;
+  width: 55px;
+  background-color: #ff5340;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.firstImage img {
+  margin: 0 auto;
+}
+.showNumber {
+  color: #0a84ff;
+}
+.thirdImage {
+  height: 55px;
+  width: 55px;
+  background-color: #569082;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+a {
+  color: #0a84ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.wrapperPayment {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+.firstImageSecondLine {
+  height: 55px;
+  width: 55px;
+  background-color: #009ddf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.otherText {
+  color: #989898;
+}
+.secondImageSecondLine {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #3d7d99;
+}
+.thirdImageSecondLine {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #ff5340;
+}
+.imageThirdLine {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #99463d;
+}
+.firstImageFourthLine {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #00d3a0;
+}
