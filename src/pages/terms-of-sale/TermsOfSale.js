@@ -20,7 +20,7 @@ const TermsOfSale = () => {
       <p className={style.orderOfProduct}>Заказ товара</p>
       <div className={style.wrapperOrderProduct}>
         <div>
-          <div className={style.firstImage}>
+          <div className={style.coralImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-1.png"
               alt="not found"
@@ -84,7 +84,7 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.thirdImage}>
+          <div className={style.tGreenImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-3.png"
               alt="not found"
@@ -114,7 +114,7 @@ const TermsOfSale = () => {
       <p className={style.orderOfProduct}>Оплата</p>
       <div className={style.wrapperPayment}>
         <div>
-          <div className={style.firstImageSecondLine}>
+          <div className={style.blueImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-4.png"
               alt="not found"
@@ -180,7 +180,7 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.thirdImageSecondLine}>
+          <div className={style.coralImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-8.png"
               alt="not found"
@@ -201,7 +201,7 @@ const TermsOfSale = () => {
 
       <div className={style.wrapperOrderProduct}>
         <div>
-          <div className={style.imageThirdLine}>
+          <div className={style.brownImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-9.png"
               alt="not found"
@@ -222,7 +222,7 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.imageThirdLine}>
+          <div className={style.brownImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-9.png"
               alt="not found"
@@ -245,7 +245,7 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.imageThirdLine}>
+          <div className={style.brownImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-9.png"
               alt="not found"
@@ -286,44 +286,94 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.imageThirdLine}>
+          <div className={style.secondImageFourthLine}>
             <img
-              src="https://cdn0.it4profit.com/files/7/ntos-icon-9.png"
+              src="https://cdn0.it4profit.com/files/7/ntos-icon-11.png"
               alt="not found"
             />
           </div>
-          <p>Оплата по QR-коду (сервис Оплати)</p>
+          <p>Доставка курьером i-Store по г. Минску</p>
           <p className={style.otherText}>
-            Для совершения платежа в корзине сайта необходимо выбрать способ
-            оплаты "Оплата по QR-коду (сервис Оплати)". Далее - отсканировать
-            QR-код или пройти по ссылке. На последнем шаге клиент будет
-            переадресован в приложение О!Плати для совершения платежа.
-          </p>
-          <p className={style.otherText}>
-            Для совершения платежа при доставке, необходимо предъявить курьеру
-            QR-код кошелька, который вы используете для оплаты в приложении
-            "Оплати". Курьер считает предоставленный код, после чего сумма
-            заказа будет списана с кошелька. Для проверки правильности оплаты,
-            нажмите "Посмотреть чек" или выписку.
+            Доставка осуществляется в день заказа, при условии наличия товара.
+            Товары, которые были заказаны на сайте после 19:00 (пн-пт), будут
+            доставлены на следующий день. Доставка по Минску осуществляется
+            бесплатно при сумме заказа свыше 200,00 руб. При заказе до 200,00
+            руб, стоимость доставки по Минску - 10,00 руб.
           </p>
         </div>
 
         <div>
-          <div className={style.imageThirdLine}>
+          <div className={style.blueImage}>
             <img
-              src="https://cdn0.it4profit.com/files/7/ntos-icon-9.png"
+              src="https://cdn0.it4profit.com/files/7/ntos-icon-12.png"
               alt="not found"
             />
           </div>
-          <p>Рассрочка или кредит</p>
+          <p>Доставка по Беларуси в более чем 131 город</p>
           <p className={style.otherText}>
-            <a href="">Подробнее</a> о получении товара в рассрочку либо кредит.
+            Отправка товара осуществляется на следующий день после оплаты, при
+            условии наличия товара. Стоимость доставки по РБ рассчитывается
+            автоматически в момент оформления заказа и зависит от удаленности
+            того или иного города. В среднем это 10,00 руб.
           </p>
-          <p className={style.otherText}>
-            Обращаем внимание, что при совершении оплаты с привлечением
-            кредитных средств банка или с использованием карт рассрочки скидки
-            (специальные предложения, бонусы и т.д.) могут не предоставляться.
+        </div>
+      </div>
+      <p className={style.orderOfProduct}>Получение товара</p>
+      <div className={style.wrapperOrderProduct}>
+        <div>
+          <div className={style.brownImage}>
+            <img
+              src="https://cdn0.it4profit.com/files/7/ntos-icon-13.png"
+              alt="not found"
+            />
+          </div>
+          <p>
+            Осмотрите полученный товар и убедитесь в отсутствии внешних
+            дефектов, затем поставьте свою подпись, подтверждающую отсутствие
+            претензий к комплектации и внешнему виду товара;
           </p>
+        </div>
+
+        <div>
+          <div className={style.coralImage}>
+            <img
+              src="https://cdn0.it4profit.com/files/7/ntos-icon-14.png"
+              alt="not found"
+            />
+          </div>
+          <p>После проверки товара рассчитайтесь с курьером;</p>
+        </div>
+
+        <div>
+          <div className={style.tGreenImage}>
+            <img
+              src="https://cdn0.it4profit.com/files/7/ntos-icon-15.png"
+              alt="not found"
+            />
+          </div>
+          <p>
+            После проведения оплаты курьер вручает Вам чек и гарантийный талон,
+            которые подтверждают факт покупки в нашем интернет-магазине.
+          </p>
+        </div>
+      </div>
+      <div className={style.documents}>
+        <p>Образцы документов</p>
+        <div className={style.wrapperPhotoOfDocuments}>
+          <div className={style.photoOfDocuments}>
+            <img
+              src="https://cdn0.it4profit.com/files/7/check-1-1-terms-of-sale.jpg"
+              alt="not found"
+            />
+            <p>Чек</p>
+          </div>
+          <div className={style.photoOfDocuments}>
+            <img
+              src="https://cdn0.it4profit.com/files/7/user_doc-3.jpg"
+              alt="not found"
+            />
+            <p>Гарантийный талон</p>
+          </div>
         </div>
       </div>
     </>

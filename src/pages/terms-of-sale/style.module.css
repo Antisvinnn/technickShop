@@ -60,21 +60,19 @@
   border-bottom: 0.5px solid silver;
 }
 
-.firstImage {
+.coralImage {
   height: 55px;
   width: 55px;
   background-color: #ff5340;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
-}
-.firstImage img {
-  margin: 0 auto;
 }
 .showNumber {
   color: #0a84ff;
 }
-.thirdImage {
+.tGreenImage {
   height: 55px;
   width: 55px;
   background-color: #569082;
@@ -98,7 +96,7 @@ a:hover {
   margin: 0 auto;
   padding-bottom: 35px;
 }
-.firstImageSecondLine {
+.blueImage {
   height: 55px;
   width: 55px;
   background-color: #009ddf;
@@ -119,16 +117,8 @@ a:hover {
   border-radius: 5px;
   background-color: #3d7d99;
 }
-.thirdImageSecondLine {
-  height: 55px;
-  width: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: #ff5340;
-}
-.imageThirdLine {
+
+.brownImage {
   height: 55px;
   width: 55px;
   display: flex;
@@ -145,4 +135,33 @@ a:hover {
   justify-content: center;
   border-radius: 5px;
   background-color: #00d3a0;
+}
+.secondImageFourthLine {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #3d7d99;
+}
+.documents {
+  border: 0.5px solid silver;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.documents p {
+  text-align: center;
+}
+.wrapperPhotoOfDocuments {
+  display: flex;
+  justify-content: space-around;
+}
+.photoOfDocuments {
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  width: 15%;
 }
