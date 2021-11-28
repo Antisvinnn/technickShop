@@ -9,6 +9,7 @@ import TermsOfSale from "./pages/terms-of-sale/TermsOfSale";
 
 import InfoRoadMap from "./pages/infoRoadMap/InfoRoadMap";
 import About from "./pages/about/About";
+import Contacts from "./components/iStoreContancts/Contacts";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about" component={About} />
         <Route path="*" component={Page404} />
       </Switch>
+      <Contacts />
       <Footer />
     </>
   );

@@ -1,3 +1,8 @@
+.news {
+  display: block;
+  width: 100%;
+}
+
 .containerFirstLine {
   margin-top: 10px;
   display: grid;

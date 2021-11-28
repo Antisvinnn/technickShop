@@ -82,7 +82,6 @@ const DeliveryWays = () => {
           </div>
         </div>
       </div>
-      <Contacts />
     </>
   );
 };

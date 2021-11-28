@@ -86,13 +86,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <Link to="/">
-        <img
-          className={style.news}
-          src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:1400:600:0/bg:000000/q:100/plain/s3://complex-images/7/2714/2100-ru3.png@jpeg"
-          alt="not found"
-        ></img>
-      </Link>
     </>
   );
 };
