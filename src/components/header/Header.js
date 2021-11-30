@@ -15,7 +15,7 @@ const Header = () => {
         <Link to="/information/terms-of-sale">Оплата и доставка</Link>
         <Link to="/information/about">Адреса магазинов</Link>
         <Link to="/information/installment-and-credit">Кредит</Link>
-        <a href="$">Юр. лицам </a>
+        <Link to="/information/legEntities">Юр. лицам </Link>
         <div className={style.workTime}>
           <img
             src="https://cdn0.iconfinder.com/data/icons/eon-basketball-i-1/32/time_clock_deadline_watch-256.png"
