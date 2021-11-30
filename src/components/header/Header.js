@@ -12,11 +12,11 @@ const Header = () => {
         </div>
       </Link>
       <div className={style.headContacts}>
-        <Link to="/terms-of-sale">Оплата и доставка</Link>
-
-        <Link to="/information">Адреса магазинов</Link>
-        <a href="$">Кредит</a>
-        <a href="$">Юр. лицам </a>
+        <Link to="/information">Информация</Link>
+        <Link to="/information/terms-of-sale">Оплата и доставка</Link>
+        <Link to="/information/about">Адреса магазинов</Link>
+        <Link to="/information/installment-and-credit">Кредит</Link>
+        <Link to="/information/legEntities">Юр. лицам </Link>
         <div className={style.workTime}>
           <img
             src="https://cdn0.iconfinder.com/data/icons/eon-basketball-i-1/32/time_clock_deadline_watch-256.png"
@@ -86,13 +86,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <Link to="/">
-        <img
-          className={style.news}
-          src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:1400:600:0/bg:000000/q:100/plain/s3://complex-images/7/2714/2100-ru3.png@jpeg"
-          alt="not found"
-        ></img>
-      </Link>
     </>
   );
 };

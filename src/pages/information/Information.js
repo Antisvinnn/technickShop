@@ -12,22 +12,21 @@ const Information = () => {
         <Link to="/information">
           <li>Информация</li>
         </Link>
-        <a href="$">
+        <Link to="/information/about">
           <li>О магазине</li>
-        </a>
-
-        <a href="$">
+        </Link>
+        <Link to="/information/terms-of-sale">
           <li>Условия продажи</li>
-        </a>
-        <a href="$">
+        </Link>
+        <Link to="/information/installment-and-credit">
           <li>Рассрочка и кредит</li>
-        </a>
-        <a href="$">
+        </Link>
+        <Link to="/information/waranty">
           <li>Гарантия</li>
-        </a>
-        <a href="$">
+        </Link>
+        <Link to="/information/job">
           <li>Вакансии</li>
-        </a>
+        </Link>
       </div>
     </>
   );
