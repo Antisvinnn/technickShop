@@ -45,12 +45,12 @@ const Header = () => {
       <div className={style.storeLinks}>
         <img
           className={style.mainImgOfLinks}
-          src="https://cdn1.iconfinder.com/data/icons/banking-36/128/Mobile_phone_apple_android_windows-256.png"
+          src="https://cdn1.iconfinder.com/data/icons/devices-66/136/iphone_5s-256.png"
           alt="not found"
         ></img>
         <img
           className={style.searchImg}
-          src="https://cdn2.iconfinder.com/data/icons/lightly-icons/30/search-240.png"
+          src="https://cdn3.iconfinder.com/data/icons/flat-graphics/32/zoom-128.png"
           alt="not found"
         ></img>
         <Link to="/mac">Mac</Link>
@@ -68,19 +68,19 @@ const Header = () => {
         <div className={style.rightLinks}>
           <a href="$">
             <img
-              src="https://cdn3.iconfinder.com/data/icons/finance-banking-1/64/07_law_scales-256.png"
+              src="https://cdn0.iconfinder.com/data/icons/blue-common-symbols-vol-3/1024/scales_shell_scurf_plate_app_mobile-256.png"
               alt="not found"
             ></img>
           </a>
           <a href="$">
             <img
-              src="https://cdn0.iconfinder.com/data/icons/business-office-1-7/55/35-256.png"
+              src="https://cdn2.iconfinder.com/data/icons/symbols-8/50/1F499-blue-heart-128.png"
               alt="not found"
             ></img>
           </a>
           <a href="$">
             <img
-              src="https://cdn1.iconfinder.com/data/icons/aami-web-internet/64/aami2-48-256.png"
+              src="https://cdn0.iconfinder.com/data/icons/seo-and-web-set-3-1/100/Untitled-2-132-128.png"
               alt="not found"
             ></img>
           </a>
