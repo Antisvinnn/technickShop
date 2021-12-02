@@ -12,7 +12,7 @@ const Credits = () => {
           <div class={style.arrowBottomLine}></div>
           <Link to="/information">информация</Link>
           <div class={style.arrowBottomLine}></div>
-          <a>кредит</a>
+          <a href="$">кредит</a>
         </div>
         <div class={style.wordCredit}>
           <h1>Кредит</h1>
@@ -26,14 +26,14 @@ const Credits = () => {
         <p>Легко впишется в ваш бюджет</p>
       </div>
       <div class={style.banks}>
-        <a href="">Кредит «Быстрые покупки онлайн» от Статусбанка</a>
-        <a href="">Кредит от Альфа-банка</a>
-        <a href="">Кредит: Банк БелВЭБ 36 месяцев</a>
-        <a href="">Рассрочка: Банк Бел ВЭБ 12 месяцев</a>
-        <a href="">Рассрочка: "Халва" 0-0-3</a>
-        <a href="">Рассрочка: "Карта покупок" 0-0-3</a>
-        <a href="">Рассрочка: "Черепахы" 0-0-8</a>
-        <a href="">Рассрочка: "КартаFUN" 0-0-3</a>
+        <a href="$">Кредит «Быстрые покупки онлайн» от Статусбанка</a>
+        <a href="$">Кредит от Альфа-банка</a>
+        <a href="$">Кредит: Банк БелВЭБ 36 месяцев</a>
+        <a href="$">Рассрочка: Банк Бел ВЭБ 12 месяцев</a>
+        <a href="$">Рассрочка: "Халва" 0-0-3</a>
+        <a href="$">Рассрочка: "Карта покупок" 0-0-3</a>
+        <a href="$">Рассрочка: "Черепахы" 0-0-8</a>
+        <a href="$">Рассрочка: "КартаFUN" 0-0-3</a>
       </div>
       <div className={style.wrapperDescriptionOfCredits}>
         <div className={style.MainDescriptionOfCredits}>
@@ -171,7 +171,7 @@ const Credits = () => {
         </div>
         <div className={style.map}>
           <p>Где можно приобрести товар в кредит от Статусбанк:</p>
-          <img src={map} />
+          <img src={map} alt="not found" />
           <div className={style.adressOfShops}>
             <p>Магазин i-Store Ленина, 5</p>
             <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
