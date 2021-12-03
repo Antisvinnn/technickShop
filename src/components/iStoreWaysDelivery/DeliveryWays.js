@@ -1,5 +1,4 @@
 import style from "./style.module.css";
-import Contacts from "../iStoreContancts/Contacts";
 const DeliveryWays = () => {
   return (
     <>
