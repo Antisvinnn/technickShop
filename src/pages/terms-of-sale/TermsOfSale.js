@@ -1,4 +1,4 @@
-import style from "./style.module.css";
+import style from "./style.module.scss";
 import house from "../../assets/images/terms-of-sale/pngegg.png";
 import { Link } from "react-router-dom";
 
@@ -11,9 +11,9 @@ const TermsOfSale = () => {
           <div className={style.arrowBottomLine}></div>
           <Link to="/information">информация</Link>
           <div className={style.arrowBottomLine}></div>
-          <a href="$">Оплата и доставка</a>
+          <p>оплата и доставка</p>
         </div>
-        <div className={style.wordCredit}>
+        <div className={style.mainWord}>
           <h1>Оплата и доставка</h1>
         </div>
       </div>
@@ -134,7 +134,7 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.secondImageSecondLine}>
+          <div className={style.tBlueImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-5.png"
               alt="not found"
@@ -287,7 +287,7 @@ const TermsOfSale = () => {
         </div>
 
         <div>
-          <div className={style.secondImageFourthLine}>
+          <div className={style.tBlueImage}>
             <img
               src="https://cdn0.it4profit.com/files/7/ntos-icon-11.png"
               alt="not found"
