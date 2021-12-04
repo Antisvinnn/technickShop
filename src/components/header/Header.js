@@ -55,7 +55,7 @@ const Header = () => {
         ></img>
         <Link to="/mac">Mac</Link>
         <a href="$">iPad</a>
-        <a href="$">iPhone</a>
+        <Link to="/iphone">iPhone</Link>
         <a href="$">Watch</a>
         <a href="$">TV</a>
         <a href="$">AirPods</a>

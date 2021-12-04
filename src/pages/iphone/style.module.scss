@@ -1,0 +1,46 @@
+@import "../../variables/mixinsOfGrigory.scss";
+
+.container {
+  background-color: #f6f6f6;
+}
+.nav {
+  @include nav;
+}
+.house {
+  @include house;
+}
+.nav a {
+  text-decoration: none;
+  color: #7a7777;
+}
+.arrowBottomLine {
+  @include arrowBottomLine;
+}
+.banner {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bannerText {
+  padding-left: 30px;
+}
+.headerText {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 15px;
+}
+.mainText {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+.listOfIphone {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 3;
+}
