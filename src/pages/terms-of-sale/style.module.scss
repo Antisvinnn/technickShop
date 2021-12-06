@@ -1,60 +1,40 @@
+@import "../../variables/mixinsOfGrigory.scss";
+
 .container {
   background-color: #f6f6f6;
 }
 .nav {
-  min-height: 40px;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 10px;
-  align-items: center;
-  width: 70%;
-  margin: 0 auto;
-  border-bottom: 0.5px solid silver;
+  @include nav;
 }
 
 .house {
-  height: 15px;
-  width: 15px;
+  @include house;
 }
 .nav a {
   text-decoration: none;
-  color: black;
+  color: #7a7777;
 }
 .arrowBottomLine {
-  content: "";
-  display: inline-block;
-  margin-top: 2px;
-  margin-left: -2px;
-  width: 2px;
-  height: 2px;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  transform: rotate(45deg);
-  padding: 1px;
-  margin: 4px;
+  @include arrowBottomLine;
 }
-.wordCredit {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 20px;
-  width: 70%;
-  margin: 0 auto;
+.mainWord {
+  @include mainWord;
 }
-.wordCredit h1 {
+.mainWord h1 {
   margin: 10px 0;
   font-weight: 200;
 }
 .orderOfProduct {
   font-size: 20px;
-  width: 70%;
+  width: 80%;
   margin: 30px auto;
-  font-weight: 600;
+  font-weight: 400;
 }
 .wrapperOrderProduct {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 35px;
   border-bottom: 0.5px solid silver;
@@ -92,7 +72,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 35px;
 }
@@ -108,7 +88,7 @@ a:hover {
 .otherText {
   color: #989898;
 }
-.secondImageSecondLine {
+.tBlueImage {
   height: 55px;
   width: 55px;
   display: flex;
@@ -136,18 +116,10 @@ a:hover {
   border-radius: 5px;
   background-color: #00d3a0;
 }
-.secondImageFourthLine {
-  height: 55px;
-  width: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: #3d7d99;
-}
+
 .documents {
   border: 0.5px solid silver;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 200px;
   margin-bottom: 100px;

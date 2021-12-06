@@ -1,80 +1,44 @@
+@import "../../variables/mixinsOfGrigory.scss";
+$blueColor: #0a84ff;
 .container {
   background-color: #f6f6f6;
 }
 .nav {
-  min-height: 40px;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 15px;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 0.5px solid silver;
+  @include nav;
 }
 
 .house {
-  height: 15px;
-  width: 15px;
+  @include house;
 }
 .nav a {
   text-decoration: none;
-  color: rgb(122, 119, 119);
+  color: #7a7777;
 }
 .arrowBottomLine {
-  content: "";
-  display: inline-block;
-  margin-top: 2px;
-  margin-left: -2px;
-  width: 2px;
-  height: 2px;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  transform: rotate(45deg);
-  padding: 1px;
-  margin: 4px 10px;
+  @include arrowBottomLine;
 }
-.wordCredit {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 20px;
-  width: 80%;
-  margin: 0 auto;
+.mainWord {
+  @include mainWord;
 }
-.wordCredit h1 {
+.mainWord h1 {
   margin: 10px 0;
+  font-weight: 200;
 }
 .banner {
-  width: 30%;
-  margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
+  @include banner;
 }
 .banks {
-  margin: 0 auto;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  @include banks;
 }
 
 .banks a:hover {
-  color: #0a84ff;
-  border-bottom: 0.5px solid #0a84ff;
+  color: $blueColor;
+  border-bottom: 0.5px solid $blueColor;
+  text-decoration: none;
 }
 
 .banks a {
-  padding: 20px;
-  border-top: 0.5px solid silver;
-  border-left: 0.5px solid silver;
-  border-right: 0.5px solid silver;
-  border-bottom: 0.5px solid silver;
-  font-size: 20px;
-  text-align: center;
-  transition: 0.2s ease;
-  color: black;
-  text-decoration: none;
+  @include refOfBanks;
 }
 .wrapperDescriptionOfCredits {
   margin: 0 auto;
@@ -113,7 +77,7 @@
   padding: 12px;
   margin: 0 0;
 }
-.firsDescription {
+.firstDescription {
   padding: 12px;
   margin: 0 0;
   width: 20%;
