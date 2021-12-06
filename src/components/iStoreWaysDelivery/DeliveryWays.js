@@ -1,3 +1,4 @@
+
 import style from "./style.module.scss";
 
 const DeliveryWays = () => {
