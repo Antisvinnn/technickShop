@@ -1,5 +1,6 @@
-import style from "./style.module.css";
-import Contacts from "../iStoreContancts/Contacts";
+
+import style from "./style.module.scss";
+
 const DeliveryWays = () => {
   return (
     <>

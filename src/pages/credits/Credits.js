@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import style from "./style.module.css";
+import style from "./style.module.scss";
 import map from "../../assets/images/credits/map.png";
 import house from "../../assets/images/credits/pngegg.png";
 
@@ -12,9 +12,9 @@ const Credits = () => {
           <div class={style.arrowBottomLine}></div>
           <Link to="/information">информация</Link>
           <div class={style.arrowBottomLine}></div>
-          <a>кредит</a>
+          <p>кредит</p>
         </div>
-        <div class={style.wordCredit}>
+        <div class={style.mainWord}>
           <h1>Кредит</h1>
         </div>
       </div>
@@ -26,14 +26,14 @@ const Credits = () => {
         <p>Легко впишется в ваш бюджет</p>
       </div>
       <div class={style.banks}>
-        <a href="">Кредит «Быстрые покупки онлайн» от Статусбанка</a>
-        <a href="">Кредит от Альфа-банка</a>
-        <a href="">Кредит: Банк БелВЭБ 36 месяцев</a>
-        <a href="">Рассрочка: Банк Бел ВЭБ 12 месяцев</a>
-        <a href="">Рассрочка: "Халва" 0-0-3</a>
-        <a href="">Рассрочка: "Карта покупок" 0-0-3</a>
-        <a href="">Рассрочка: "Черепахы" 0-0-8</a>
-        <a href="">Рассрочка: "КартаFUN" 0-0-3</a>
+        <a href="$">Кредит «Быстрые покупки онлайн» от Статусбанка</a>
+        <a href="$">Кредит от Альфа-банка</a>
+        <a href="$">Кредит: Банк БелВЭБ 36 месяцев</a>
+        <a href="$">Рассрочка: Банк Бел ВЭБ 12 месяцев</a>
+        <a href="$">Рассрочка: "Халва" 0-0-3</a>
+        <a href="$">Рассрочка: "Карта покупок" 0-0-3</a>
+        <a href="$">Рассрочка: "Черепаха" 0-0-8</a>
+        <a href="$">Рассрочка: "КартаFUN" 0-0-3</a>
       </div>
       <div className={style.wrapperDescriptionOfCredits}>
         <div className={style.MainDescriptionOfCredits}>
@@ -125,7 +125,7 @@ const Credits = () => {
                 src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:394:227:0/q:100/plain/s3://pages/7/104/table-icon-7.png@jpeg"
                 alt="not found"
               />
-              <h6 className={style.firsDescription}>Способы погашения</h6>
+              <h6 className={style.firstDescription}>Способы погашения</h6>
               <h6 className={style.secondDescription}>
                 <ul>
                   <li>Наличными денежными средствами в кассе Банка</li>
@@ -171,7 +171,7 @@ const Credits = () => {
         </div>
         <div className={style.map}>
           <p>Где можно приобрести товар в кредит от Статусбанк:</p>
-          <img src={map} />
+          <img src={map} alt="not found" />
           <div className={style.adressOfShops}>
             <p>Магазин i-Store Ленина, 5</p>
             <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>

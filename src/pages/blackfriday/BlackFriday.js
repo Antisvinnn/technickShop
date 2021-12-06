@@ -1,7 +1,9 @@
+import style from "./style.module.scss";
+
 const BlackFriday = () => {
   return (
     <div>
-      <div>dffhfgvdf</div>
+      <div className={style.text}>dffhfgvdf</div>
     </div>
   );
 };

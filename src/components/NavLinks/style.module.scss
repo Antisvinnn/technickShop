@@ -1,3 +1,7 @@
+@import "../../variables/mixins.scss";
+$linksColor: #0a84ff;
+$mainTextColor: #231f20;
+
 .navLinks {
   width: 28%;
   display: flex;
@@ -9,13 +13,13 @@
 }
 .navLinks a {
   text-decoration: none;
-  color: rgb(50, 138, 209);
-  border-bottom: 1px dashed rgb(50, 138, 209);
+  color: $linksColor;
+  border-bottom: 1px dashed $linksColor;
   transition: 1s linear;
 }
 
 .navLinks a:hover {
   cursor: pointer;
   border-bottom: none;
-  color: rgba(27, 27, 27, 0.568);
+  color: $mainTextColor;
 }
