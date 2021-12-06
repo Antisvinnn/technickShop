@@ -9,11 +9,7 @@ $linksColor: #0a84ff;
   background-color: rgb(218, 214, 214);
 }
 .aboutHead {
-  font-size: 40px;
-  font-weight: 300;
-  border-top: 2px solid gray;
-  color: $mainTextColor;
-  width: 80%;
+  @include shortCutLine;
   margin: 25px 0 0 200px;
 }
 

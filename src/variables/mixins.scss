@@ -2,6 +2,14 @@ $mainTextColor: #231f20;
 $linksColor: #0a84ff;
 $discriptionColor: #bababa;
 
+@mixin attributes {
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 3px 20px;
+  margin: 3px 10px;
+  font-size: 10px;
+}
 @mixin cutLine {
   position: absolute;
   content: "";
@@ -11,7 +19,14 @@ $discriptionColor: #bababa;
   height: 2px;
   background-color: #e0e0e0;
 }
-
+@mixin shortCutLine {
+  content: "";
+  font-size: 40px;
+  font-weight: 300;
+  border-top: 2px solid gray;
+  color: $mainTextColor;
+  width: 80%;
+}
 @mixin circle {
   position: relative;
   display: inline-block;
