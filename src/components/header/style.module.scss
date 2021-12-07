@@ -9,6 +9,7 @@
   justify-items: center;
   align-items: center;
 }
+
 .link {
   text-decoration: none;
   color: white;
@@ -42,28 +43,37 @@
   align-items: center;
 }
 .storeLinks {
-  display: grid;
   height: 100px;
-  width: 100%;
-  background-color: gray;
+  background-color: black;
+}
+
+.linksContainer {
+  height: 100%;
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
   grid-template-columns: repeat(14, 1fr) 4fr;
   justify-items: center;
   align-items: center;
 }
+
 .storeLinks a {
   text-decoration: none;
-  color: black;
+
+  color: rgb(255, 255, 255);
+
   font-size: 15px;
 }
 
 .mainImgOfLinks {
+  margin: 0 0 0 100px;
+
   width: 70px;
   height: 70px;
 }
 .searchImg {
   width: 50px;
   height: 50px;
-  margin-left: 50px;
 }
 .rightLinks a > img {
   width: 30px;
