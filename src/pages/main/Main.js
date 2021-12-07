@@ -1,4 +1,4 @@
-import style from "./style.module.css";
+import style from "./style.module.scss";
 import IStoreInfo from "../../components/IStoreBlockInfo/IStoreInfo";
 import Devices from "../../components/devices/Devices";
 import DeliveryWays from "../../components/iStoreWaysDelivery/DeliveryWays";
