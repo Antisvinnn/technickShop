@@ -5,12 +5,28 @@
   margin-left: -2px;
   width: 2px;
   height: 2px;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
+
+  border-top: 2px solid #7a7777;
+  border-right: 2px solid #7a7777;
+
   transform: rotate(45deg);
   padding: 1px;
   margin: 4px 10px;
 }
+
+@mixin circleBottomLine {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #0a84ff;
+  border-radius: 50%;
+  text-align: center;
+  content: "";
+  left: 5px;
+  top: 2px;
+}
+
 
 @mixin nav {
   min-height: 40px;

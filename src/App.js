@@ -8,6 +8,7 @@ import Page404 from "./pages/page404/Page404";
 import InfoRoadMap from "./pages/infoRoadMap/InfoRoadMap";
 import About from "./pages/about/About";
 import Contacts from "./components/iStoreContancts/Contacts";
+import Iphone from "./pages/iphone/Iphone";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/mac" component={Mac} />
+        <Route path="/iphone" component={Iphone} />
         <Route path="/blackFriday" component={BlackFriday} />
         <Route path="/information" component={InfoRoadMap} />
         <Route path="/about" component={About} />
