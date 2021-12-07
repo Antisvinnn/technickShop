@@ -1,70 +1,72 @@
-@import "../../variables/mixins.scss";
+@import '../../variables/mixins.scss';
 $mainTextColor: #231f20;
 
 .headBlock {
-  background-color: rgb(236, 236, 236);
-  display: flex;
-  width: 100%;
-  padding: 40px 0 0 0;
+	background-color: rgb(236, 236, 236);
+	display: flex;
+	width: 100%;
+	padding: 40px 0 0 0;
 }
 .headBlock img {
-  margin: 55px 0 60px 155px;
+	margin: 55px 0 60px 155px;
 }
 .headBlock::after {
-  position: absolute;
-  @include shortCutLine;
-  margin: -20px 0 0 200px;
-  background-color: rgb(236, 236, 236);
+	position: absolute;
+	@include shortCutLine;
+	margin: -20px 0 0 200px;
+	background-color: rgb(236, 236, 236);
 }
 .headText {
-  margin: 150px 0;
+	margin: 150px 0;
 }
 
 .navBLock {
-  display: flex;
-  margin: -70px 0 50px 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+	display: flex;
+	margin: -70px 0 50px 0;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 }
 .navBLock > a {
-  background-color: white;
-  padding: 50px 0;
-  height: 150px;
-  width: 380px;
-  transition: 0.3s linear;
-  border: 1px solid black;
+	background-color: white;
+	padding: 50px 0;
+	height: 150px;
+	width: 380px;
+	transition: 0.3s linear;
+	border: 1px solid black;
 }
 
 .attributes {
-  margin: -35px 0 0 10px;
-  position: absolute;
-  display: flex;
+	margin: -35px 0 0 10px;
+	position: absolute;
+	display: flex;
+	height: 35px;
 }
-.attributes h1 {
-  @include attributes;
-  background-color: rgb(68, 163, 68);
-  border: 1px solid rgb(68, 163, 68);
+.attrNewLabel {
+	@include attributes;
+	background-color: rgb(68, 163, 68);
+	border: 1px solid rgb(68, 163, 68);
+	margin-right: 6px;
 }
 .disc {
-  @include attributes;
-  background-color: #ff6969;
-  border: 1px solid #ff6969;
+	@include attributes;
+	background-color: #ff6969;
+	border: 1px solid #ff6969;
 }
 
 .navBLock a > h3 {
-  text-decoration: none;
-  text-align: center;
-  font-size: 18px;
-  color: #000;
-  font-weight: 300;
-  transition: 0.3s linear;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+	font-weight: 300;
+	transition: 0.3s linear;
 }
 
 .navBLock > a:hover {
-  border: 1px solid #0a84ff;
-  color: #0a84ff;
+	border: 1px solid #0a84ff;
+	color: #0a84ff;
 }
 .navBLock a > h3:hover {
-  color: #0a84ff;
+	color: #0a84ff;
 }
