@@ -9,11 +9,7 @@ $linksColor: #0a84ff;
   background-color: rgb(218, 214, 214);
 }
 .aboutHead {
-  font-size: 40px;
-  font-weight: 300;
-  border-top: 2px solid gray;
-  color: $mainTextColor;
-  width: 80%;
+  @include shortCutLine;
   margin: 25px 0 0 200px;
 }
 
@@ -89,18 +85,8 @@ $linksColor: #0a84ff;
 
 .send {
   margin: 0 0 20px 10px;
-  padding: 8px 40px;
-  border: 1px solid $linksColor;
-  color: $linksColor;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: 0.3s linear;
 }
-.send:hover {
-  cursor: pointer;
-  background-color: $linksColor;
-  color: white;
-}
+
 .userInfo > img {
   width: 99vw;
   height: 60vh;

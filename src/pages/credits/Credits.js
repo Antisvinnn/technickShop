@@ -54,7 +54,7 @@ const Credits = () => {
                 src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:394:227:0/q:100/plain/s3://pages/7/104/table-icon-5.png@jpeg"
                 alt="not found"
               />
-              <h6 className={style.firsDescription}>Процентная ставка</h6>
+              <h6 className={style.firstDescription}>Процентная ставка</h6>
               <h6 className={style.secondDescription}>
                 25% 25,5% 26% 26,5% 27% 27,5% на (6, 12, 18, 24, 30, 36
                 месяцев). А при покупке iPhone 13 до 31.12.21 - 19,02% годовых
