@@ -1,3 +1,4 @@
+import { Button, Input, Radio } from "antd";
 import style from "./style.module.scss";
 
 const About = () => {
@@ -70,27 +71,22 @@ const About = () => {
 
       <h1 className={style.headTextInfo}>Форма обратной свзяи</h1>
       <div className={style.userInfo}>
-        <input type="text" name="username" placeholder="Ваше имя" />
-        <input
-          type="phoneNumber"
-          name="phoneNumber"
-          placeholder="+375294911911"
-        />
-        <input type="email" name="email" placeholder="Email" />
-        <textarea
-          className={style.comment}
-          type="comment"
-          name="comment"
-          placeholder="Введите номер карты клиента или комментарий к заказу"
-        />
+        <Input placeholder="Ваше имя" />
+        <Input placeholder="Введите номер" />
+        <Input placeholder="Email" />
+
+        <Input className={style.comment} placeholder="Комментарии" />
+
         <div className={style.politics}>
-          <input type="radio" name="politics" value="confirm" />Я согласен на
-          обработку персональных данных в соответствии с
-          <a href="$"> политикой</a>
+          <Radio value={1}>
+            Я согласен на обработку персональных данных в соответствии с
+            <a href="$"> политикой</a>
+          </Radio>
         </div>
-        <a href="$" className={style.send}>
+
+        <Button className={style.send} type="primary">
           Отправить
-        </a>
+        </Button>
         <img
           src="https://www.kv.by/sites/default/files/pictures/userpictures/2019/01/23/2359/foto_10.png"
           alt="not found"
