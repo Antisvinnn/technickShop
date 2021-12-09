@@ -8,15 +8,25 @@ $blueColor: #0a84ff;
 }
 
 .house {
-  @include house;
-}
-.nav a {
   text-decoration: none;
   color: #7a7777;
+  padding-right: 10px;
 }
-.arrowBottomLine {
-  @include arrowBottomLine;
+.information {
+  padding: 0 10px;
 }
+.information:hover {
+  color: #7a7777;
+  text-decoration: none;
+}
+.nav span {
+  margin: 10px 0;
+  color: #7a7777;
+}
+.credit {
+  padding-left: 10px;
+}
+
 .mainWord {
   @include mainWord;
 }

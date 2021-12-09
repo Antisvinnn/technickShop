@@ -1,7 +1,8 @@
 import style from "./style.module.scss";
 import IphoneConfig from "./iphone.config";
-import { HomeOutlined, RightOutlined } from "@ant-design/icons";
+import { HomeOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import { Breadcrumb } from "antd";
 
 const Iphone = () => {
   const ourIphone = (arr) => {
@@ -21,11 +22,16 @@ const Iphone = () => {
     <>
       <div class={style.container}>
         <div className={style.nav}>
-          <Link to="/">
-            <HomeOutlined className={style.house} />
-          </Link>
-          <RightOutlined className={style.arrow} />
-          <p>iPhone</p>
+          <Breadcrumb>
+            <Breadcrumb.Item>
+              <Link to="/">
+                <HomeOutlined className={style.house} />
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <span>iPhone</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
         </div>
         <div className={style.banner}>
           <img

@@ -1,18 +1,29 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 import map from "../../assets/images/credits/map.png";
-import house from "../../assets/images/credits/pngegg.png";
+import { Breadcrumb } from "antd";
+import { HomeOutlined } from "@ant-design/icons";
 
 const Credits = () => {
   return (
     <>
       <div class={style.container}>
         <div className={style.nav}>
-          <img className={style.house} src={house} alt="not found" />
-          <div class={style.arrowBottomLine}></div>
-          <Link to="/information">информация</Link>
-          <div class={style.arrowBottomLine}></div>
-          <p>кредит</p>
+          <Breadcrumb>
+            <Breadcrumb.Item>
+              <Link to="/">
+                <HomeOutlined className={style.house} />
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <Link to="/information">
+                <span className={style.information}>Информация</span>
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <span className={style.credit}>Кредит</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
         </div>
         <div class={style.mainWord}>
           <h1>Кредит</h1>

@@ -1,17 +1,28 @@
 import style from "./style.module.scss";
-import house from "../../assets/images/terms-of-sale/pngegg.png";
 import { Link } from "react-router-dom";
+import { Breadcrumb } from "antd";
+import { HomeOutlined } from "@ant-design/icons";
 
 const TermsOfSale = () => {
   return (
     <>
       <div className={style.container}>
         <div className={style.nav}>
-          <img className={style.house} src={house} alt="not found" />
-          <div className={style.arrowBottomLine}></div>
-          <Link to="/information">информация</Link>
-          <div className={style.arrowBottomLine}></div>
-          <p>оплата и доставка</p>
+          <Breadcrumb>
+            <Breadcrumb.Item>
+              <Link to="/">
+                <HomeOutlined className={style.house} />
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <Link to="/information">
+                <span className={style.information}>Информация</span>
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <span>Оплата и доставка</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
         </div>
         <div className={style.mainWord}>
           <h1>Оплата и доставка</h1>
