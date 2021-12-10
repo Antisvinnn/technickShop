@@ -3,10 +3,7 @@ $mainTextColor: #231f20;
 $linksColor: #0a84ff;
 
 .headBlock {
-  display: flex;
-  width: 100%;
-  height: 80px;
-  background-color: rgb(218, 214, 214);
+  @include headerBlock;
 }
 .aboutHead {
   @include shortCutLine;

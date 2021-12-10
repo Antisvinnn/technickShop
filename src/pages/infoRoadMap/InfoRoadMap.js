@@ -4,6 +4,7 @@ import Information from "../information/Information";
 import About from "../about/About";
 import TermsOfSale from "../terms-of-sale/TermsOfSale";
 import LegalEnt from "../legalEntities/LegalEnt";
+import Job from "../job/Job";
 
 const InfoRoadMap = () => {
   return (
@@ -13,6 +14,7 @@ const InfoRoadMap = () => {
         <Route path="/information/about" component={About} />
         <Route path="/information/legEntities" component={LegalEnt} />
         <Route path="/information/installment-and-credit" component={Credits} />
+        <Route path="/information/job" component={Job} />
         <Route path="/information" component={Information} />
       </Switch>
     </>
