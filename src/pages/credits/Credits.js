@@ -1,42 +1,25 @@
-import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 import map from "../../assets/images/credits/map.png";
-import { Breadcrumb } from "antd";
-import { HomeOutlined } from "@ant-design/icons";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
+import { useLocation } from "react-router";
 
 const Credits = () => {
+  let location = useLocation();
   return (
     <>
-      <div class={style.container}>
-        <div className={style.nav}>
-          <Breadcrumb>
-            <Breadcrumb.Item>
-              <Link to="/">
-                <HomeOutlined className={style.house} />
-              </Link>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-              <Link to="/information">
-                <span className={style.information}>Информация</span>
-              </Link>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-              <span className={style.credit}>Кредит</span>
-            </Breadcrumb.Item>
-          </Breadcrumb>
-        </div>
-        <div class={style.mainWord}>
-          <h1>Кредит</h1>
-        </div>
+      <RefBreadCrumb path={location.pathname} className={style.breadcrumb} />
+      <div className={style.mainWord}>
+        <h1>Кредит</h1>
       </div>
-      <div class={style.banner}>
+
+      <div className={style.banner}>
         <img
           src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:394:227:0/q:100/plain/s3://pages/7/104/mbp13print.png@jpeg"
           alt="not found"
         />
         <p>Легко впишется в ваш бюджет</p>
       </div>
-      <div class={style.banks}>
+      <div className={style.banks}>
         <a href="$">Кредит «Быстрые покупки онлайн» от Статусбанка</a>
         <a href="$">Кредит от Альфа-банка</a>
         <a href="$">Кредит: Банк БелВЭБ 36 месяцев</a>

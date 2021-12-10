@@ -1,0 +1,6 @@
+@import "../../variables/mixinsOfGrigory.scss";
+
+.container {
+  background-color: #f6f6f6;
+  @include nav;
+}
