@@ -1,0 +1,104 @@
+@import "../../variables/mixins.scss";
+
+.headBlock {
+  @include headerBlock;
+}
+.aboutHead {
+  @include shortCutLine;
+  margin: 25px 0 0 200px;
+}
+.jobHead {
+  background: linear-gradient(180deg, #f8fffb, #ecf7ff);
+}
+.jobInfo {
+  display: block;
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding: 25px 0 0 0;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 60px;
+}
+
+.infoBlock {
+  margin: 70px 0 0 35px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.infoBlock > h1 {
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+.checkMark {
+  margin: 0 10px 0 0;
+}
+
+.photoJob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 0 0 50px 0;
+}
+
+.textAbout {
+  text-align: right;
+  width: 400px;
+  margin: 0 100px 0 0;
+}
+.textAbout > h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.textAbout > p {
+  font-size: 15px;
+}
+.photoJob::after {
+  @include shortCutLine;
+  margin: 450px 0 0 0;
+}
+.rightTextAbout {
+  text-align: left;
+  width: 400px;
+  margin: 0 100px 0 70px;
+}
+.rightTextAbout > h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.rightTextAbout > p {
+  font-size: 15px;
+}
+.formWorker {
+  text-align: center;
+}
+.fieldForm {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin: 0 auto;
+  padding: 12px 12px;
+}
+
+.commentBar {
+  width: 45%;
+  height: 150px;
+}
+
+.fileManager {
+  display: block;
+  margin: 25px 27.5% 25px 27.5%;
+}
+
+.confirmButton {
+  margin: 15px auto 0;
+}
