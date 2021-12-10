@@ -1,5 +1,5 @@
 import style from "./style.module.scss";
-import macPage from "./mac.config";
+import macPage from "./macConfig";
 
 const Mac = () => {
   const macMap = (arr) => {
