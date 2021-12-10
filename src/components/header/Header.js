@@ -1,7 +1,31 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.scss";
-
+import { Menu, Dropdown } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 const Header = () => {
+  const menu = (
+    <Menu className={style.dropMenu}>
+      <Menu.Item>
+        <Link to="/mac">Mac</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">iPad</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="/iphone">iPhone</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">Watch</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">TV</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">AirPods</Link>
+      </Menu.Item>
+    </Menu>
+  );
+
   return (
     <>
       <Link to="/blackFriday" className={style.link}>
@@ -54,12 +78,15 @@ const Header = () => {
             src="https://cdn3.iconfinder.com/data/icons/flat-graphics/32/zoom-128.png"
             alt="not found"
           ></img>
-          <Link to="/mac">Mac</Link>
-          <a href="$">iPad</a>
-          <Link to="/iphone">iPhone</Link>
-          <a href="$">Watch</a>
-          <a href="$">TV</a>
-          <a href="$">AirPods</a>
+          <Dropdown overlay={menu}>
+            <a
+              className="ant-dropdown-link"
+              onClick={(e) => e.preventDefault()}
+            >
+              Техника Apple <DownOutlined />
+            </a>
+          </Dropdown>
+
           <a href="$">Аудио</a>
           <a href="$">Аксессуары</a>
           <a href="$">BnO</a>
