@@ -4,7 +4,7 @@ import {
   InboxOutlined,
 } from "../../../node_modules/@ant-design/icons";
 import { Button, Input, Form, message, Upload, Radio } from "antd";
-import jobOffers from "./job.config";
+import jobOffers from "./jobConfig";
 
 const Job = () => {
   const { Dragger } = Upload;
@@ -31,7 +31,7 @@ const Job = () => {
   const mapJob = (arr) => {
     return arr.map((el, index) => {
       return el.photoCheckSide === "right" ? (
-        <div key={index} className={style.photoJob}>
+        <div key={el.jobName} className={style.photoJob}>
           <div className={style.textAbout}>
             <h1>{el.jobName}</h1>
             <p> {el.jobDiscr}</p>
@@ -42,7 +42,7 @@ const Job = () => {
           <img src={el.photoJob} alt="not found"></img>
         </div>
       ) : (
-        <div key={index} className={style.photoJob}>
+        <div key={el.jobName} className={style.photoJob}>
           <img src={el.photoJob} alt="not found"></img>
           <div className={style.rightTextAbout}>
             <h1>{el.jobName}</h1>
