@@ -7,16 +7,10 @@
   @include nav;
 }
 
-.house {
-  @include house;
-}
-.nav a {
-  text-decoration: none;
+.nav span {
   color: #7a7777;
 }
-.arrowBottomLine {
-  @include arrowBottomLine;
-}
+
 .mainWord {
   @include mainWord;
 }

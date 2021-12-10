@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 import style from "./style.module.scss";
+import { useLocation } from "react-router";
 
 const Information = () => {
+  let location = useLocation();
+
   return (
     <>
+      <RefBreadCrumb path={location.pathname} className={style.breadcrumb} />
       <div className={style.headBlock}>
         <span className={style.infoHead}>Информация</span>
       </div>

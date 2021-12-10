@@ -1,31 +1,25 @@
-import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 import map from "../../assets/images/credits/map.png";
-import house from "../../assets/images/credits/pngegg.png";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
+import { useLocation } from "react-router";
 
 const Credits = () => {
+  let location = useLocation();
   return (
     <>
-      <div class={style.container}>
-        <div className={style.nav}>
-          <img className={style.house} src={house} alt="not found" />
-          <div class={style.arrowBottomLine}></div>
-          <Link to="/information">информация</Link>
-          <div class={style.arrowBottomLine}></div>
-          <p>кредит</p>
-        </div>
-        <div class={style.mainWord}>
-          <h1>Кредит</h1>
-        </div>
+      <RefBreadCrumb path={location.pathname} className={style.breadcrumb} />
+      <div className={style.mainWord}>
+        <h1>Кредит</h1>
       </div>
-      <div class={style.banner}>
+
+      <div className={style.banner}>
         <img
           src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:394:227:0/q:100/plain/s3://pages/7/104/mbp13print.png@jpeg"
           alt="not found"
         />
         <p>Легко впишется в ваш бюджет</p>
       </div>
-      <div class={style.banks}>
+      <div className={style.banks}>
         <a href="$">Кредит «Быстрые покупки онлайн» от Статусбанка</a>
         <a href="$">Кредит от Альфа-банка</a>
         <a href="$">Кредит: Банк БелВЭБ 36 месяцев</a>
