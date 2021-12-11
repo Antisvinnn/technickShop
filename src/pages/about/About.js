@@ -1,9 +1,15 @@
 import { Button, Input, Radio, Form } from "antd";
 import style from "./style.module.scss";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
+import { useLocation } from "react-router";
 
 const About = () => {
+  let location = useLocation();
+
   return (
     <>
+      <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
+
       <div className={style.headBlock}>
         <span className={style.aboutHead}>О магазине</span>
       </div>

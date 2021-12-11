@@ -5,6 +5,8 @@ import {
 } from "../../../node_modules/@ant-design/icons";
 import { Button, Input, Form, message, Upload, Radio } from "antd";
 import jobOffers from "./jobConfig";
+import { useLocation } from "react-router";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 
 const Job = () => {
   const { Dragger } = Upload;
@@ -55,9 +57,12 @@ const Job = () => {
       );
     });
   };
+  let location = useLocation();
 
   return (
     <>
+      <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
+
       <div className={style.headBlock}>
         <div className={style.aboutHead}>Вакансии</div>
       </div>

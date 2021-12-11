@@ -4,7 +4,10 @@ $blueColor: #0a84ff;
 .mainWord {
   @include mainWord;
 }
-
+.mainWord h1 {
+  width: 80%;
+  margin: 0 auto;
+}
 .banner {
   @include banner;
 }
