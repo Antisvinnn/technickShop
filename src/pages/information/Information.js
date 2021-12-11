@@ -8,7 +8,7 @@ const Information = () => {
 
   return (
     <>
-      <RefBreadCrumb path={location.pathname} className={style.breadcrumb} />
+      <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
       <div className={style.headBlock}>
         <span className={style.infoHead}>Информация</span>
       </div>

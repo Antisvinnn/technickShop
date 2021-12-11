@@ -27,7 +27,9 @@ const RefBreadCrumb = ({ path }) => {
   };
   return (
     <div className={style.container}>
-      <Breadcrumb>{renderBreadCrumb(elmentsOfPath)}</Breadcrumb>
+      <Breadcrumb className={style.containerBreadCrumb}>
+        {renderBreadCrumb(elmentsOfPath)}
+      </Breadcrumb>
     </div>
   );
 };
