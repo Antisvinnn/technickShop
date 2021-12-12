@@ -1,10 +1,10 @@
 import style from "./style.module.scss";
 import IphoneConfig from "./iphone.config";
-import { HomeOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
-import { Breadcrumb } from "antd";
+import { useLocation } from "react-router";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 
 const Iphone = () => {
+  let location = useLocation();
   const ourIphone = (arr) => {
     return arr.map((el, index) => {
       return (
@@ -21,18 +21,8 @@ const Iphone = () => {
   return (
     <>
       <div class={style.container}>
-        <div className={style.nav}>
-          <Breadcrumb>
-            <Breadcrumb.Item>
-              <Link to="/">
-                <HomeOutlined className={style.house} />
-              </Link>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-              <span>iPhone</span>
-            </Breadcrumb.Item>
-          </Breadcrumb>
-        </div>
+        <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
+
         <div className={style.banner}>
           <img
             src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/plain/s3://catalog-categories/7/13/iphone_12_hero_5-up_print__gben_12.png@webp"

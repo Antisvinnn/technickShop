@@ -1,32 +1,16 @@
 import style from "./style.module.scss";
-import { Link } from "react-router-dom";
-import { Breadcrumb } from "antd";
-import { HomeOutlined } from "@ant-design/icons";
+import { useLocation } from "react-router";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 
 const TermsOfSale = () => {
+  let location = useLocation();
+
   return (
     <>
-      <div className={style.container}>
-        <div className={style.nav}>
-          <Breadcrumb>
-            <Breadcrumb.Item>
-              <Link to="/">
-                <HomeOutlined className={style.house} />
-              </Link>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-              <Link to="/information">
-                <span className={style.information}>Информация</span>
-              </Link>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-              <span>Оплата и доставка</span>
-            </Breadcrumb.Item>
-          </Breadcrumb>
-        </div>
-        <div className={style.mainWord}>
-          <h1>Оплата и доставка</h1>
-        </div>
+      <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
+
+      <div className={style.mainWord}>
+        <h1>Оплата и доставка</h1>
       </div>
       <p className={style.orderOfProduct}>Заказ товара</p>
       <div className={style.wrapperOrderProduct}>
