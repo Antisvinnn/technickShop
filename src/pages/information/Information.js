@@ -26,7 +26,7 @@ const Information = () => {
         <Link to="/information/installment-and-credit">
           <li>Рассрочка и кредит</li>
         </Link>
-        <Link to="/information/waranty">
+        <Link to="/information/guarantee">
           <li>Гарантия</li>
         </Link>
         <Link to="/information/job">
