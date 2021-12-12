@@ -1,3 +1,5 @@
+$blueColor: #0a84ff;
+
 @mixin arrowBottomLine {
   content: "";
   display: inline-block;
@@ -70,5 +72,15 @@
   text-align: center;
   transition: 0.2s ease;
   color: black;
+  text-decoration: none;
+}
+
+@mixin refOfBanksActive {
+  padding: 20px;
+  border: 0.5px solid $blueColor;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.2s ease;
+  color: $blueColor;
   text-decoration: none;
 }
