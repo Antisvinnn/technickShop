@@ -1,29 +1,12 @@
 @import "../../variables/mixinsOfGrigory.scss";
 $blueColor: #0a84ff;
 
-.house {
-  text-decoration: none;
-  color: #7a7777;
-  padding-right: 10px;
+.mainWord {
+  @include mainWord;
 }
-.information {
-  padding: 0 10px;
-}
-.information:hover {
-  color: #7a7777;
-  text-decoration: none;
-}
-.nav span {
-  margin: 10px 0;
-  color: #7a7777;
-}
-.credit {
-  padding-left: 10px;
-}
-
 .mainWord h1 {
-  margin: 10px 0;
-  font-weight: 200;
+  width: 80%;
+  margin: 0 auto;
 }
 .banner {
   @include banner;
