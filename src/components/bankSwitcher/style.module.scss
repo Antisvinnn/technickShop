@@ -27,7 +27,6 @@ $blueColor: #0a84ff;
 }
 .MainDescriptionOfCredits {
   font-size: 24px;
-  height: 640px;
 }
 .MainDescriptionOfCredits p {
   margin: 5px 0;
@@ -88,20 +87,19 @@ li {
 }
 
 .methodsOfInstallment {
-  height: 500px;
   grid-column: 1/3;
 }
 .methodsOfInstallment > h3 {
   font-size: 20px;
 }
 .methodsOfInstallment > li {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .installment {
+  position: relative;
   font-size: 20px;
   margin: 0 0 25px;
-  padding: 40px 0 0px 0px;
 }
 
 .installment::before {
