@@ -1,0 +1,146 @@
+@import "../../variables/mixinsOfGrigory.scss";
+$blueColor: #0a84ff;
+
+.banks {
+  @include banks;
+}
+
+.banks div:hover {
+  cursor: pointer;
+  color: $blueColor;
+  border-bottom: 0.5px solid $blueColor;
+  text-decoration: none;
+}
+.bankActive {
+  @include refOfBanksActive;
+}
+.nonActive {
+  @include refOfBanks;
+}
+.wrapperDescriptionOfCredits {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+}
+.MainDescriptionOfCredits {
+  font-size: 24px;
+}
+.MainDescriptionOfCredits p {
+  margin: 5px 0;
+}
+.map {
+  font-size: 24px;
+  text-align: center;
+  height: 200px;
+}
+.description {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.firstBlockOfDescription {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-top: 0.5px solid rgb(228, 222, 222);
+  border-bottom: 0.5px solid rgb(228, 222, 222);
+}
+.secondBlockOfDescription {
+  display: flex;
+  align-items: center;
+}
+.description img {
+  padding: 12px;
+  margin: 0 0;
+}
+.firstDescription {
+  font-size: 16px;
+  padding: 12px;
+  margin: 0 0;
+  width: 20%;
+}
+.secondDescription {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  margin: 0 0;
+  width: 70%;
+}
+.markList li {
+  list-style-type: none;
+  margin: 0 0;
+}
+.markList li:before {
+  content: "-";
+}
+li {
+  margin: 0px 0px 15px;
+}
+.adressOfShops {
+  width: 435px;
+  margin: 10px auto;
+  text-align: start;
+  font-size: 14px;
+  border: 0.5px solid rgb(228, 222, 222);
+}
+
+.methodsOfInstallment {
+  grid-column: 1/3;
+}
+.methodsOfInstallment > h3 {
+  font-size: 20px;
+}
+.methodsOfInstallment > li {
+  font-size: 17px;
+}
+
+.installment {
+  position: relative;
+  font-size: 20px;
+  margin: 0 0 25px;
+}
+
+.installment::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 100px;
+  background-color: #f5f1f1;
+  margin: -5px 12px 0px 0px;
+}
+
+.contactsBlock {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  grid-column: 1/3;
+  margin: 0 0 150px 0;
+}
+.phone {
+  margin: 0 150px 0 0;
+}
+.phone > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px auto;
+}
+.phone > a {
+  font-size: 18px;
+  color: black;
+  text-decoration: underline;
+}
+
+.bankLink > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px auto;
+}
+.bankLink > a {
+  font-size: 18px;
+  color: black;
+  text-decoration: underline;
+}

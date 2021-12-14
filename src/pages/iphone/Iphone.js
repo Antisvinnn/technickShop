@@ -1,8 +1,10 @@
 import style from "./style.module.scss";
-import house from "../../assets/images/credits/pngegg.png";
 import IphoneConfig from "./iphone.config";
+import { useLocation } from "react-router";
+import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 
 const Iphone = () => {
+  let location = useLocation();
   const ourIphone = (arr) => {
     return arr.map((el, index) => {
       return (
@@ -19,11 +21,8 @@ const Iphone = () => {
   return (
     <>
       <div class={style.container}>
-        <div className={style.nav}>
-          <img className={style.house} src={house} alt="not found" />
-          <div class={style.arrowBottomLine}></div>
-          <p>iPhone</p>
-        </div>
+        <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
+
         <div className={style.banner}>
           <img
             src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/plain/s3://catalog-categories/7/13/iphone_12_hero_5-up_print__gben_12.png@webp"

@@ -1,3 +1,5 @@
+$blueColor: #0a84ff;
+
 @mixin arrowBottomLine {
   content: "";
   display: inline-block;
@@ -5,10 +7,8 @@
   margin-left: -2px;
   width: 2px;
   height: 2px;
-
   border-top: 2px solid #7a7777;
   border-right: 2px solid #7a7777;
-
   transform: rotate(45deg);
   padding: 1px;
   margin: 4px 10px;
@@ -27,7 +27,6 @@
   top: 2px;
 }
 
-
 @mixin nav {
   min-height: 40px;
   display: flex;
@@ -35,9 +34,7 @@
   font-size: 15px;
   color: #7a7777;
   align-items: center;
-  width: 80%;
   margin: 0 auto;
-  border-bottom: 0.5px solid silver;
 }
 
 @mixin house {
@@ -49,7 +46,8 @@
   display: flex;
   justify-content: flex-start;
   font-size: 20px;
-  width: 80%;
+  width: 100%;
+  background-color: #f6f6f6;
   margin: 0 auto;
 }
 @mixin banner {
@@ -74,5 +72,15 @@
   text-align: center;
   transition: 0.2s ease;
   color: black;
+  text-decoration: none;
+}
+
+@mixin refOfBanksActive {
+  padding: 20px;
+  border: 0.5px solid $blueColor;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.2s ease;
+  color: $blueColor;
   text-decoration: none;
 }

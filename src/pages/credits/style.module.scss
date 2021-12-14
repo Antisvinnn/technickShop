@@ -1,45 +1,17 @@
 @import "../../variables/mixinsOfGrigory.scss";
 $blueColor: #0a84ff;
-.container {
-  background-color: #f6f6f6;
-}
-.nav {
-  @include nav;
-}
 
-.house {
-  @include house;
-}
-.nav a {
-  text-decoration: none;
-  color: #7a7777;
-}
-.arrowBottomLine {
-  @include arrowBottomLine;
-}
 .mainWord {
   @include mainWord;
 }
 .mainWord h1 {
-  margin: 10px 0;
-  font-weight: 200;
+  width: 80%;
+  margin: 0 auto;
 }
 .banner {
   @include banner;
 }
-.banks {
-  @include banks;
-}
 
-.banks a:hover {
-  color: $blueColor;
-  border-bottom: 0.5px solid $blueColor;
-  text-decoration: none;
-}
-
-.banks a {
-  @include refOfBanks;
-}
 .wrapperDescriptionOfCredits {
   margin: 0 auto;
   width: 80%;
