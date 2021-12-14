@@ -155,6 +155,532 @@ const BankSwitcher = () => {
       );
     } else if (state === 2) {
       return <div>Кредит от Альфа-Банка</div>;
+    } else if (state === 5) {
+      return (
+        <>
+          <div className={style.MainDescriptionOfCredits}>
+            <p>Рассрочка по картам «Халва»</p>
+            <h5>Банк-партнер МТБанк</h5>
+            <p>
+              0% первоначальный взнос, 3 месяца на любой товар,
+              <br /> не участвующий в акции.
+              <br /> Без справок с работы и поручителей.
+            </p>
+
+            <div className={style.description}>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-1.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Первоначальный платёж
+                </h6>
+                <h6 className={style.secondDescription}>
+                  нет/по желанию/частично картой и собственными средствами
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-2.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Период рассрочки</h6>
+                <h6 className={style.secondDescription}>3 месяца;</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-4.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Размер рассрочки</h6>
+                <h6 className={style.secondDescription}>
+                  в пределах лимита на карте; максимальный лимит,
+                  предоставляемый банком - 6 000 BYN
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-5.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Процентная ставка</h6>
+                <h6 className={style.secondDescription}>0,01% годовых</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-7.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Способы погашения</h6>
+                <h6 className={style.secondDescription}>
+                  <li>
+                    бесплатное пополнение через сервис perevod.mtbank.by с карты
+                    Visa и MasterCard любого банка - до 5 000 BYN в месяц;
+                  </li>
+                  <li>пополнение через систему ЕРИП;</li>
+                  <li>интернет-банки и устройства других банков</li>
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-8.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Порядок уплаты</h6>
+                <h6 className={style.secondDescription}>
+                  Возврат потраченной суммы на карту равными долями до 15 числа
+                  каждого месяца. Возможность досрочного погашения без штрафных
+                  санкций
+                </h6>
+              </section>
+            </div>
+          </div>
+          <div className={style.map}>
+            <p>Где можно приобрести товар по карте «Халва» </p>
+            <img src={map} alt="not found" />
+            <div className={style.adressOfShops}>
+              <p>Магазин i-Store Ленина, 5</p>
+              <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
+              <p>Магазин i-Store Петра Мстиславца 11 (ТРЦ Dana Mall)</p>
+              <p>Магазин i-Store Победителей, 9 (ТРЦ Galleria Minsk)</p>
+            </div>
+          </div>
+          <div className={style.methodsOfInstallment}>
+            <h2 className={style.installment}>Как оформить рассрочку</h2>
+            <h3>Если у вас еще нет карты «Халва» от МТБанка:</h3>
+            <li>
+              Заполните заявление на сайте МТБанка, по телефону или в отделении
+              банка. Обязательное официальное трудоустройство на последнем месте
+              работы не менее трех месяцев. Запрос рассматривается индивидуально
+              и ответ будет озвучен в течение дня. Заберите свою карту или
+              закажите доставку.
+            </li>
+            <li>
+              Выберите любой товар в i-Store, не участвующий в акции. Оплатите
+              товар картой в любом магазине i-Store либо на нашем сайте в
+              пределах лимита. Вы можете осуществить платеж частично
+              собственными средствами и частично картой.
+            </li>
+            <h3>Если у вас есть карта «Халва» от МТБанка:</h3>
+            <li>
+              Выберите любой товар в i-Store, не участвующий в акции. Оплатите
+              товар картой или частично собственными средствами в любом магазине
+              i-Store либо на нашем сайте в пределах лимита.
+            </li>
+          </div>
+          <div className={style.contactsBlock}>
+            <div className={style.phone}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-phone-item.png"
+                alt="not found"
+              ></img>
+              <h3>Телефон для справки</h3>
+              <a href="$">+375 17 229-99-99</a>
+            </div>
+            <div className={style.bankLink}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-web-item.png"
+                alt="not found"
+              ></img>
+              <h3>Сайт</h3>
+              <a href="$">МТБанк</a>
+            </div>
+          </div>
+        </>
+      );
+    } else if (state === 6) {
+      return (
+        <>
+          <div className={style.MainDescriptionOfCredits}>
+            <p>Рассрочка по «Карте покупок»</p>
+            <h5>Банк-партнер Белгазпромбанк</h5>
+            <p>
+              0% первоначальный взнос,
+              <br /> 3 месяца на любой товар, не участвующий в акции.
+            </p>
+
+            <div className={style.description}>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-1.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Первоначальный платёж
+                </h6>
+                <h6 className={style.secondDescription}>
+                  нет/по желанию/частично картой и собственными средствами
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-2.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Период рассрочки</h6>
+                <h6 className={style.secondDescription}>3 месяца;</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-4.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Размер рассрочки</h6>
+                <h6 className={style.secondDescription}>
+                  в пределах лимита на карте; максимальный лимит,
+                  предоставляемый банком - 10 000 BYN
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-5.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Процентная ставка</h6>
+                <h6 className={style.secondDescription}>0,000001% годовых</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-7.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Способы погашения</h6>
+                <h6 className={style.secondDescription}>
+                  <li>
+                    онлайн через сервис интернет-банка или мобильное приложение;
+                  </li>
+                  <li>
+                    интернет-переводом с платежной карточки любых банков,
+                    зарегистрированных на территории Республики Беларусь;
+                  </li>
+                  <li>
+                    путем внесения наличных в кассах РУП «Белпочта», инфокиосках
+                    и кассах ОАО «Белгазпромбанк».
+                  </li>
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-8.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Порядок уплаты</h6>
+                <h6 className={style.secondDescription}>
+                  Возврат потраченной суммы на карту равными долями до 20 числа
+                  каждого месяца. Возможность досрочного погашения без штрафных
+                  санкций
+                </h6>
+              </section>
+            </div>
+          </div>
+          <div className={style.map}>
+            <p>Где можно приобрести товар по «Карте покупок»</p>
+            <img src={map} alt="not found" />
+            <div className={style.adressOfShops}>
+              <p>Магазин i-Store Ленина, 5</p>
+              <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
+              <p>Магазин i-Store Петра Мстиславца 11 (ТРЦ Dana Mall)</p>
+              <p>Магазин i-Store Победителей, 9 (ТРЦ Galleria Minsk)</p>
+            </div>
+          </div>
+          <div className={style.methodsOfInstallment}>
+            <h2 className={style.installment}>Как оформить рассрочку</h2>
+            <h3>Если у вас еще нет «Карты покупок» от Белгазпромбанка:</h3>
+            <li>
+              Можно оформить Карту покупок в любом отделении Белгазпромбанка,
+              отправить заявку на сайте, оформить в режиме онлайн в
+              Интернет-Банке и мобильном приложении «BGPB mobile».
+            </li>
+            <li>
+              Выберите любой товар в i-Store, не участвующий в акции. Оплатите
+              товар картой в любом магазине i-Store либо на нашем сайте в
+              пределах лимита. Вы можете осуществить платеж частично
+              собственными средствами и частично картой.
+            </li>
+            <h3>Если у вас есть «Карта покупок» от Белгазпромбанка:</h3>
+            <li>
+              Выберите любой товар в i-Store, не участвующий в акции. Оплатите
+              товар картой или частично собственными средствами в любом магазине
+              i-Store либо на нашем сайте в пределах лимита.
+            </li>
+          </div>
+          <div className={style.contactsBlock}>
+            <div className={style.phone}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-phone-item.png"
+                alt="not found"
+              ></img>
+              <h3>Телефон для справки</h3>
+              <a href="$">+375 17 229-99-99</a>
+            </div>
+            <div className={style.bankLink}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-web-item.png"
+                alt="not found"
+              ></img>
+              <h3>Сайт</h3>
+              <a href="$">Белгазпромбанк</a>
+            </div>
+          </div>
+        </>
+      );
+    } else if (state === 7) {
+      return (
+        <>
+          <div className={style.MainDescriptionOfCredits}>
+            <p>Рассрочка по карте «Черепаха»</p>
+            <h5>Банк-партнер ВТБ</h5>
+            <p>
+              0% первоначальный взнос,
+              <br /> 8 месяцев на любой товар, не участвующий в акции.
+              <br /> Без справок с работы и поручителей.
+            </p>
+
+            <div className={style.description}>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-1.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Первоначальный платёж
+                </h6>
+                <h6 className={style.secondDescription}>
+                  нет/по желанию/частично картой и собственными средствами
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-2.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Период рассрочки</h6>
+                <h6 className={style.secondDescription}>8 месяцев;</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-4.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Размер рассрочки</h6>
+                <h6 className={style.secondDescription}>
+                  в пределах лимита на карте; максимальный лимит,
+                  предоставляемый банком - 5 000 BYN
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-5.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Процентная ставка</h6>
+                <h6 className={style.secondDescription}>0,0001% годовых</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-7.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Способы погашения</h6>
+                <h6 className={style.secondDescription}>
+                  <li>
+                    С 1 по 25 число месяца:
+                    <br /> - в офисах Банка без использования карточки.
+                  </li>
+                  <li>
+                    С 1 по 22 число месяца:
+                    <br /> - в офисах Банка с использованием карточки;
+                    <br /> - в отделениях РУП «Белпочта»;
+                    <br /> - в пунктах банковского обслуживания 24
+                    банков-участников системы «Расчет» - ЕРИП; <br />- через
+                    платежные Интернет-сервисы (например, www.e-pay.by); <br />-
+                    посредством услуги "Интернет-банк" Банка ВТБ;
+                    <br /> - в банкоматах и инфокиосках Банка ВТБ;
+                    <br /> - переводом с карточки на карточку (P2P), в том числе
+                    с карточки иного банка.
+                  </li>
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-8.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Порядок уплаты</h6>
+                <h6 className={style.secondDescription}>
+                  Возврат потраченной суммы на карту равными долями до 25 числа
+                  каждого месяца в офисах Банка, до 22 числа каждого месяца -
+                  иными способами оплаты. Возможность досрочного погашения без
+                  штрафных санкций.
+                </h6>
+              </section>
+            </div>
+          </div>
+          <div className={style.map}>
+            <p>Где можно приобрести товар по карте «Черепаха»</p>
+            <img src={map} alt="not found" />
+            <div className={style.adressOfShops}>
+              <p>Магазин i-Store Ленина, 5</p>
+              <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
+              <p>Магазин i-Store Петра Мстиславца 11 (ТРЦ Dana Mall)</p>
+              <p>Магазин i-Store Победителей, 9 (ТРЦ Galleria Minsk)</p>
+            </div>
+          </div>
+          <div className={style.methodsOfInstallment}>
+            <h2 className={style.installment}>Как оформить рассрочку</h2>
+            <h3>Если у вас есть карта «Черепаха» от Банка ВТБ:</h3>
+            <li>
+              Выберите любой товар в i-Store, не участвующий в акции. Оплатите
+              товар картой или частично собственными средствами в любом магазине
+              i-Store либо на нашем сайте в пределах лимита.
+            </li>
+          </div>
+          <div className={style.contactsBlock}>
+            <div className={style.phone}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-phone-item.png"
+                alt="not found"
+              ></img>
+              <h3>Телефон для справки</h3>
+              <a href="$">+375 17 309-15-15</a>
+            </div>
+            <div className={style.bankLink}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-web-item.png"
+                alt="not found"
+              ></img>
+              <h3>Сайт</h3>
+              <a href="$">Банк ВТБ</a>
+            </div>
+          </div>
+        </>
+      );
+    } else if (state === 8) {
+      return (
+        <>
+          <div className={style.MainDescriptionOfCredits}>
+            <p>Рассрочка по «КартаFUN»</p>
+            <h5>Банк-партнер БПС-Сбербанк</h5>
+            <p>
+              0% первоначальный взнос,
+              <br /> 3 месяца на любой товар, не участвующий в акции. <br />
+              Без справок с работы и поручителей.
+            </p>
+
+            <div className={style.description}>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-1.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Первоначальный платёж
+                </h6>
+                <h6 className={style.secondDescription}>
+                  нет/по желанию/частично картой и собственными средствами
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-2.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Период рассрочки</h6>
+                <h6 className={style.secondDescription}>3 месяца;</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-4.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Размер рассрочки</h6>
+                <h6 className={style.secondDescription}>
+                  в пределах лимита на карте; максимальный лимит,
+                  предоставляемый банком - 10 000 BYN
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-5.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Процентная ставка</h6>
+                <h6 className={style.secondDescription}>0,000001% годовых</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-7.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Способы погашения</h6>
+                <h6 className={style.secondDescription}>
+                  <li>
+                    Онлайн через сервис интернет-банка или мобильное приложение;
+                  </li>
+                  <li>
+                    интернет-переводом с платежной карточки любых банков,
+                    зарегистрированных на территории Республики Беларусь;
+                  </li>
+                  <li>
+                    путем внесения наличных в кассах РУП «Белпочта», инфокиосках
+                    и кассах ОАО БПС-Сбербанк.
+                  </li>
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-8.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Порядок уплаты</h6>
+                <h6 className={style.secondDescription}>
+                  Возврат потраченной суммы на карту равными долями до
+                  последнего дня каждого месяца. Возможность досрочного
+                  погашения без штрафных санкций
+                </h6>
+              </section>
+            </div>
+          </div>
+          <div className={style.map}>
+            <p>Где можно приобрести товар по «КартаFUN»</p>
+            <img src={map} alt="not found" />
+            <div className={style.adressOfShops}>
+              <p>Магазин i-Store Ленина, 5</p>
+              <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
+              <p>Магазин i-Store Петра Мстиславца 11 (ТРЦ Dana Mall)</p>
+              <p>Магазин i-Store Победителей, 9 (ТРЦ Galleria Minsk)</p>
+            </div>
+          </div>
+          <div className={style.methodsOfInstallment}>
+            <h2 className={style.installment}>Как оформить рассрочку</h2>
+            <h3>Если у вас есть «КартаFUN» от БПС-Сбербанк:</h3>
+            <li>
+              Выберите любой товар в i-Store, не участвующий в акции. Оплатите
+              товар картой или частично собственными средствами в любом магазине
+              i-Store либо на нашем сайте в пределах лимита.
+            </li>
+          </div>
+          <div className={style.contactsBlock}>
+            <div className={style.phone}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-phone-item.png"
+                alt="not found"
+              ></img>
+              <h3>Телефон для справки</h3>
+              <a href="$">148</a>
+            </div>
+            <div className={style.bankLink}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-web-item.png"
+                alt="not found"
+              ></img>
+              <h3>Сайт</h3>
+              <a href="$">БПС-Сбербанк</a>
+            </div>
+          </div>
+        </>
+      );
     }
   };
   return (
