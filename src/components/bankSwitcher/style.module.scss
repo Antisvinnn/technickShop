@@ -144,3 +144,56 @@ li {
   color: black;
   text-decoration: underline;
 }
+// контейнер для белвэба на 36 месяцев
+.newCentury {
+  display: flex;
+  box-shadow: 0 0 10px rgba(221, 208, 208, 0.5); /* Параметры тени */
+}
+.styleCreditCard {
+  width: 100%;
+}
+.wrapperNewCentury {
+  width: 80%;
+  margin: 30px auto;
+}
+.newCentury > div {
+  margin: 30px;
+}
+.newCentury > div > span > h1 {
+  display: inline-block;
+}
+.wrapperNewCentury > h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 20px;
+}
+.newCentury button {
+  margin: 50px 0;
+  color: #f6f6f6;
+  background-color: $blueColor;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+.wrapperForTopics {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.topic {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(221, 208, 208, 0.5); /* Параметры тени */
+}
+.topic p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.topic img {
+  width: 30%;
+}

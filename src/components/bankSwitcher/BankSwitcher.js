@@ -1,5 +1,9 @@
 import style from "./style.module.scss";
 import map from "../../assets/images/credits/map.png";
+import people from "../../assets/images/credits/people.png";
+import comp from "../../assets/images/credits/comp.png";
+import compwithoutinet from "../../assets/images/credits/compwithoutinet.png";
+
 import { useState } from "react";
 
 const BankSwitcher = () => {
@@ -154,7 +158,422 @@ const BankSwitcher = () => {
         </>
       );
     } else if (state === 2) {
-      return <div>Кредит от Альфа-Банка</div>;
+      return (
+        <>
+          <div className={style.MainDescriptionOfCredits}>
+            <p>
+              Кредит от Альфа-банка
+              <br /> Выгодный кредит от Альфа-банка
+            </p>
+
+            <div className={style.description}>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-5.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Процентная ставка</h6>
+                <h6 className={style.secondDescription}>27,9% годовых</h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-4.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Сумма кредита</h6>
+                <h6 className={style.secondDescription}>
+                  от 50 до 10 000 руб. (ИП и лиц, работающих у ИП – до 5 000
+                  руб. включительно)
+                </h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-2.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Срок кредитования</h6>
+                <h6 className={style.secondDescription}>
+                  срок кредитования от 3 до 48 месяцев
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-1.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Первоначальный платёж
+                </h6>
+                <h6 className={style.secondDescription}>
+                  без обязательного первоначального взноса
+                </h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:394:227:0/q:100/plain/s3://pages/7/104/table-icon-6.png@webp"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Возраст заявителя</h6>
+                <h6 className={style.secondDescription}>
+                  от 21 до 64 лет на момент погашения кредита
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-8.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Стоимость устройства</h6>
+                <h6 className={style.secondDescription}>
+                  при использовании кредита стоимость устройства увеличивается
+                  на сумму процентов по кредиту в соответствии со ставкой.
+                </h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:394:227:0/q:100/plain/s3://pages/7/104/table-icon-3.png@webp"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Необходимые документы
+                </h6>
+                <h6 className={style.secondDescription}>
+                  Паспорт гражданина РБ, либо вид на жительство в РБ
+                  иностранного гражданина.
+                </h6>
+              </section>
+
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-7.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Способы погашения</h6>
+                <h6 className={style.secondDescription}>
+                  <li>В мобильном банке «INSYNC.BY»</li>
+                  <li>
+                    Инфокиоски, банкоматы, интернет-банк Банков, отделения РУП
+                    «Белпочта», подключенных к системе ЕРИП
+                  </li>
+                  <li>С помощью сервиса онлайн переводов на сайте Банка</li>
+                  <li>В отделениях ЗАО «Альфа Банк».</li>
+                </h6>
+              </section>
+            </div>
+          </div>
+          <div className={style.map}>
+            <p>Где можно приобрести товар в кредит от Альфа-банка: </p>
+            <img src={map} alt="not found" />
+            <div className={style.adressOfShops}>
+              <p>Магазин i-Store Ленина, 5</p>
+              <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
+              <p>Магазин i-Store Петра Мстиславца 11 (ТРЦ Dana Mall)</p>
+              <p>Магазин i-Store Победителей, 9 (ТРЦ Galleria Minsk)</p>
+            </div>
+          </div>
+        </>
+      );
+    } else if (state === 3) {
+      return (
+        <>
+          <h1>Онлайн кредитование «Новае стагоддзе»</h1>
+          <div className={style.newCentury}>
+            <div>
+              <img
+                className={style.styleCreditCard}
+                src="https://cdn0.it4profit.com/files/7/credit_card_3_1.svg"
+                alt="not found"
+              />
+            </div>
+            <div>
+              <p>ПРОЦЕНТНАЯ СТАВКА</p>
+              <span>
+                <h1>20,29%</h1> годовых (на 6, 18, 24 месяцев),
+                <br />
+              </span>
+              <span>
+                <h1>29,9%</h1>годовых (на 36 месяцев)
+              </span>
+              <p>CУММА КРЕДИТА</p>
+              <span>
+                от <h1>50</h1> до <h1>7000</h1> белорусский рублей
+              </span>
+              <p>СРОК КРЕДИТОВАНИЯ</p>
+              <h3>До 36 месяцев включительно</h3>
+              <button>ИНСТРУКЦИЯ</button>
+            </div>
+          </div>
+          <div className={style.wrapperForTopics}>
+            <div className={style.topic}>
+              <img src={people} alt="not found" />
+              <p>Без поручителей</p>
+            </div>
+            <div className={style.topic}>
+              <img src={comp} alt="not found" />
+              <p>Без посещения отделения банка</p>
+            </div>
+            <div className={style.topic}>
+              <img src={compwithoutinet} alt="not found" />
+              <p>Без предоставления документов</p>
+            </div>
+          </div>
+          <section className={style.firstBlockOfDescription}>
+            <h6 className={style.firstDescription}>Особые условия</h6>
+            <h6 className={style.secondDescription}>
+              Безналичное перечисление денежных средств в соответствии с
+              указаниями Кредитополучателя путем проведения безналичных расчетов
+              в оплату приобретаемых у организации-партнера товаров, работ,
+              услуг.
+            </h6>
+          </section>
+          <section className={style.secondBlockOfDescription}>
+            <h6 className={style.firstDescription}>Предоставление кредита</h6>
+            <h6 className={style.secondDescription}>
+              Предоставление и подписание документов на получение кредита и
+              заключение кредитного договора по данной программе кредитования
+              осуществляется посредством системы дистанционного банковского
+              обслуживания ВЕБ-портал 24 часа 7 дней в неделю.
+            </h6>
+          </section>
+          <section className={style.firstBlockOfDescription}>
+            <h6 className={style.firstDescription}>
+              Способ подтверждения дохода
+            </h6>
+            <h6 className={style.secondDescription}>
+              Подтверждение доходов осуществляется путем отражения заявителем в
+              заявлении-анкете сведений о среднемесячном доходе за последние три
+              месяца. Предоставление справки о доходах и иных документов,
+              подтверждающих доходы, не требуется.
+            </h6>
+          </section>
+          <section className={style.secondBlockOfDescription}>
+            <h6 className={style.firstDescription}>
+              Кто может быть заявителем
+            </h6>
+            <div className={style.secondDescription}>
+              <p>
+                Физические лица – граждане Республики Беларусь, иностранные
+                граждане и лица без гражданства, отвечающие следующим условиям в
+                совокупности:
+              </p>
+              <p>
+                1) Возраст: не менее 21 года для женщин, 24 лет для мужчин на
+                дату представления заявителем документов и не более 65 лет – для
+                женщин и 65 лет – для мужчин на дату окончания срока возврата
+                (погашения) кредита;
+              </p>
+              <p>2) регистрация на территории Республики Беларусь; </p>
+              <p>
+                3) наличие вида на жительство на территории Республики Беларусь
+                (для иностранных граждан и лиц без гражданства);
+              </p>
+              <p>
+                4) постоянный источник дохода на территории Республики Беларусь;
+              </p>
+              <p>
+                5) непрерывный стаж работы на текущем месте работы не менее 3
+                (трех) месяцев на дату представления заявителем документов;{" "}
+              </p>
+              <p>
+                6) физическое лицо (заявитель) – не является: индивидуальным
+                предпринимателем, ремесленником либо самозанятым.
+              </p>
+            </div>
+          </section>
+          <section className={style.firstBlockOfDescription}>
+            <h6 className={style.firstDescription}>Дополнительные условия</h6>
+            <div className={style.secondDescription}>
+              <p>
+                Физические лица – граждане Республики Беларусь, иностранные
+                граждане и лица без гражданства, отвечающие следующим условиям в
+                совокупности:
+              </p>
+              <p>
+                1. По настоящей программе кредитования может быть предоставлено
+                несколько кредитов одному физическому лицу при условии, что
+                сумма остатка задолженности по кредитам в рамках настоящей
+                программы кредитования не превысит максимальную сумму кредита,
+                установленную по настоящей программе кредитования.
+              </p>
+              <p>
+                2. Дата ежемесячного возврата (погашения) основного долга и
+                процентов за пользование кредитом устанавливается в соответствии
+                с указаниями кредитополучателя с 10 по 25 число месяца.
+              </p>
+              <p>
+                3. Кредитный продукт доступен для оформления любому физическому
+                лицу, зарегистрированному в МСИ. Регистрацию можно пройти в
+                процессе оформления онлайн-кредита.
+              </p>
+              <p>
+                4. Срок действия решения банка о предоставлении кредита
+                составляет 3 минуты с момента принятия решения.
+              </p>
+              <p>
+                5. Предоставление и подписание документов на получение кредита и
+                заключение кредитного договора по настоящей программе
+                кредитования осуществляется посредством системы дистанционного
+                банковского обслуживания ВЕБ-портал.
+              </p>
+              <p> 6. Сумма кредита от 50 до 7000 белорусских рублей.</p>
+              <p>
+                7. Заявка рассматривается банком в соответствии с переданным
+                Партнером в Банк заказом посредством ВЕБ-портала для получения
+                кредита на приобретение товаров у Партнера.
+              </p>
+            </div>
+          </section>
+          <section className={style.secondBlockOfDescription}>
+            <h6 className={style.firstDescription}>Погашение кредита</h6>
+            <div className={style.secondDescription}>
+              <p>
+                1. Путем внесения наличных денег в пункт обмена валют или кассу
+                любого подразделения Банка БелВЭБ, вне зависимости от места
+                получения кредита.
+              </p>
+              <p>
+                2. Платежной карточкой любого банка Республики Беларусь через
+                сеть устройств (банкоматы, инфокиоски), обозначенных логотипом
+                СБС.
+              </p>
+              <p> 3. В сети интернет посредством услуги «Интернет-Банк».</p>
+              <p>4. В системе ЕРИП.</p>
+              <p>
+                Досрочный возврат (погашение) кредита допускается без
+                ограничений и штрафов.
+              </p>
+            </div>
+          </section>
+        </>
+      );
+    } else if (state === 4) {
+      return (
+        <>
+          <div className={style.MainDescriptionOfCredits}>
+            <p>
+              Рассрочка на 12 месяцев на любую покупку в сети магазинов i-Store
+              от банка БелВЭБ.
+            </p>
+            <p>
+              Приобретайте технику Apple в сети магазинов i-Store в рассрочку на
+              12 месяцев без процентов банку! Стоимость просто делится равными
+              частями на весь период рассрочки (12 месяцев).
+            </p>
+
+            <div className={style.description}>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-1.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>
+                  Первоначальный платёж
+                </h6>
+                <h6 className={style.secondDescription}>
+                  нет/по желанию/частично картой и собственными средствами
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-2.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Период рассрочки</h6>
+                <h6 className={style.secondDescription}>до 12 месяцев;</h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-4.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Размер рассрочки</h6>
+                <h6 className={style.secondDescription}>
+                  От 50 до 7000 белорусских рублей
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-5.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Стоимость устройства</h6>
+                <h6 className={style.secondDescription}>
+                  при использовании рассрочки стоимость устройства увеличивается
+                  на 22%
+                </h6>
+              </section>
+              <section className={style.firstBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-7.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Способы погашения</h6>
+                <h6 className={style.secondDescription}>
+                  <li>
+                    путем внесения наличных денег в пункт обмена валют или кассу
+                    любого подразделения Банка БелВЭБ;
+                  </li>
+                  <li>в сети интернет посредством услуги «Интернет-Банк»;</li>
+                  <li>в системе ЕРИП.</li>
+                </h6>
+              </section>
+              <section className={style.secondBlockOfDescription}>
+                <img
+                  src="https://cdn0.it4profit.com/pages/7/104/table-icon-8.png"
+                  alt="not found"
+                />
+                <h6 className={style.firstDescription}>Порядок уплаты</h6>
+                <h6 className={style.secondDescription}>
+                  Возврат потраченной суммы равными долями с 10 по 25 число
+                  каждого месяца. Возможность досрочного погашения без
+                  ограничений и штрафных санкций.
+                </h6>
+              </section>
+            </div>
+          </div>
+          <div className={style.map}>
+            <p>
+              Где можно приобрести товар по рассрочке от БелВЭБ на 12 месяцев
+            </p>
+            <img src={map} alt="not found" />
+            <div className={style.adressOfShops}>
+              <p>Магазин i-Store Ленина, 5</p>
+              <p>Магазин i-Store Притыцкого, 156 (ТРЦ Green City)</p>
+              <p>Магазин i-Store Петра Мстиславца 11 (ТРЦ Dana Mall)</p>
+              <p>Магазин i-Store Победителей, 9 (ТРЦ Galleria Minsk)</p>
+            </div>
+          </div>
+          <div className={style.methodsOfInstallment}>
+            <h2 className={style.installment}>Как оформить рассрочку</h2>
+          </div>
+
+          <div className={style.methodsOfInstallment}>
+            <li>
+              Выберите любой товар в i-Store. Оформите заказ, выбрав способом
+              оплаты рассрочку на 12 месяцев от Банка БелВЭБ.
+            </li>
+          </div>
+
+          <div className={style.contactsBlock}>
+            <div className={style.phone}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-phone-item.png"
+                alt="not found"
+              ></img>
+              <h3>Телефон для справки</h3>
+              <a href="$">+375 17 215-61-15</a>
+            </div>
+            <div className={style.bankLink}>
+              <img
+                src="https://cdn0.it4profit.com/pages/7/104/info-web-item.png"
+                alt="not found"
+              ></img>
+              <h3>Сайт</h3>
+              <a href="$">БелВЭБ</a>
+            </div>
+          </div>
+        </>
+      );
     } else if (state === 5) {
       return (
         <>
@@ -752,7 +1171,13 @@ const BankSwitcher = () => {
           Рассрочка: "КартаFUN" 0-0-3
         </div>
       </div>
-      <div className={style.wrapperDescriptionOfCredits}>
+      <div
+        className={
+          state === 3
+            ? style.wrapperNewCentury
+            : style.wrapperDescriptionOfCredits
+        }
+      >
         {renderBankList()}
       </div>
     </>
