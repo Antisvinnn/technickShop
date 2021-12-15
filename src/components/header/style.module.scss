@@ -98,3 +98,71 @@
   text-decoration: none !important;
   color: white;
 }
+
+.regModalButton {
+  margin: 0 0 0 160px;
+  width: 220px;
+  color: black;
+}
+
+.regModal > div {
+  margin: 0 auto;
+  width: 600px;
+  height: 700px;
+}
+
+.registerBlock {
+  padding: 45px 26px 0;
+}
+.registerBlock > h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.registerBlock > p {
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+
+.phoneReg {
+  font-size: 16px;
+  color: black;
+  height: 60px;
+  width: 99%;
+  padding: 6px 36px 6px 12px;
+}
+
+.phoneRegDiscr {
+  position: absolute;
+  margin: -12px 0 0 0;
+  z-index: 2;
+  background-color: white;
+}
+.politicsBlock {
+  margin: 20px 0 0 0;
+}
+.politicInfo {
+  font-size: 16px;
+  margin: 10px;
+  text-align: left;
+}
+.politicsBlock > button {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-size: 16px;
+}
+.active {
+  cursor: pointer;
+  background: #114f8d;
+}
+.notAllow {
+  cursor: not-allowed;
+}
+.discription {
+  font-size: 16px;
+  font-weight: 200;
+  color: #9999;
+  margin-top: 30px;
+  text-align: center;
+}
