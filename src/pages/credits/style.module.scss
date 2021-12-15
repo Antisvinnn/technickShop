@@ -11,19 +11,7 @@ $blueColor: #0a84ff;
 .banner {
   @include banner;
 }
-.banks {
-  @include banks;
-}
 
-.banks a:hover {
-  color: $blueColor;
-  border-bottom: 0.5px solid $blueColor;
-  text-decoration: none;
-}
-
-.banks a {
-  @include refOfBanks;
-}
 .wrapperDescriptionOfCredits {
   margin: 0 auto;
   width: 80%;

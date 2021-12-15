@@ -1,7 +1,32 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.scss";
+import { Menu, Dropdown, Button } from "antd";
+import { DownOutlined, ExportOutlined } from "@ant-design/icons";
 
-const Header = () => {
+const Header = (props) => {
+  const menu = (
+    <Menu className={style.dropMenu}>
+      <Menu.Item>
+        <Link to="/mac">Mac</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">iPad</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="/iphone">iPhone</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">Watch</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">TV</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="$">AirPods</Link>
+      </Menu.Item>
+    </Menu>
+  );
+
   return (
     <>
       <Link to="/blackFriday" className={style.link}>
@@ -34,13 +59,28 @@ const Header = () => {
           ></img>
           +375 (44) 5-590-364
         </a>
-        <a href="$" className={style.persArea}>
-          <img
-            src="https://cdn2.iconfinder.com/data/icons/lightly-icons/30/user-240.png"
-            alt="not found"
-          ></img>
-          Личный кабинет
-        </a>
+        {!props.authTools.auth ? (
+          <a href="$" className={style.persArea}>
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/lightly-icons/30/user-240.png"
+              alt="not found"
+            ></img>
+            Личный кабинет
+          </a>
+        ) : (
+          <div>
+            <span>Ваш личный кабинет</span>
+            <Button
+              onClick={() => {
+                props.authTools.setAuth(false);
+              }}
+              className={style.btn}
+              icon={<ExportOutlined />}
+            >
+              Выход
+            </Button>
+          </div>
+        )}
       </div>
       <div className={style.storeLinks}>
         <div className={style.linksContainer}>
@@ -54,12 +94,16 @@ const Header = () => {
             src="https://cdn3.iconfinder.com/data/icons/flat-graphics/32/zoom-128.png"
             alt="not found"
           ></img>
-          <Link to="/mac">Mac</Link>
-          <a href="$">iPad</a>
-          <Link to="/iphone">iPhone</Link>
-          <a href="$">Watch</a>
-          <a href="$">TV</a>
-          <a href="$">AirPods</a>
+          <Dropdown overlay={menu}>
+            <a
+              href="$"
+              className="ant-dropdown-link"
+              onClick={(e) => e.preventDefault()}
+            >
+              Техника Apple <DownOutlined />
+            </a>
+          </Dropdown>
+
           <a href="$">Аудио</a>
           <a href="$">Аксессуары</a>
           <a href="$">BnO</a>

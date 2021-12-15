@@ -1,9 +1,26 @@
 import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 import { useLocation } from "react-router";
 import style from "./guarantee.module.scss";
+import ServiceCentres from "./guarantee.config";
 
 const Guarantee = () => {
   let location = useLocation();
+  const service = (arr) => {
+    return arr.map((el, index) => {
+      return (
+        <>
+          <div key={index} className={el.styleForImage}>
+            <img src={el.image} alt="not found" />
+          </div>
+          <p>{el.title}</p>
+          <p>{el.adress}</p>
+          <div className={style.numbers}>
+            <a href="$">{el.numbers}</a>
+          </div>
+        </>
+      );
+    });
+  };
 
   return (
     <>
@@ -148,66 +165,8 @@ const Guarantee = () => {
         </h1>
       </div>
       <div className={style.conteinerForServiceCentres}>
-        <div className={style.conteinerForLogoApple}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/apple-logo-vector-02.jpg"
-            alt="not found"
-          />
-        </div>
-        <p>ООО «Максолюшнс»</p>
-        <p>220004, г. Минск, ул. Немига 12А Галерея «Элатио» пом 10. оф. 7</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 200-86-25</a>
-          <a href="$">+375 29 603-35-23</a>
-        </div>
-        <p>СЦ «Сервис Точка Бай»</p>
-        <p>г. Минск, ул. П. Бровки 17-101</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 284-02-03</a>
-          <a href="$">+375 44 764-02-03</a>
-          <a href="$">+375 29 876-87-78</a>
-        </div>
-        <div className={style.conteinerForLogoSingle}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/akg.jpg"
-            alt="not found"
-          />
-        </div>
-        <p>«Дримлайн»</p>
-        <p>г. Минск, ул. Кальварийская д. 8</p>
-        <p></p>
-        <div className={style.conteinerForLogoSingle}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/beats.jpg"
-            alt="not found"
-          />
-        </div>
-        <p>ООО «Максолюшнс»</p>
-        <p>220004, г. Минск, ул. Немига 12А Галерея «Элатио» пом 10. оф. 7</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 200-86-25</a>
-          <a href="$">+375 29 603-35-23</a>
-        </div>
-        <div className={style.conteinerForLogoCanon}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/canon_logo_350_tcm14-959888.jpg"
-            alt="not found"
-          />
-        </div>
+        {service(ServiceCentres)}
 
-        <p>«Магия Фото» Фото и видеотехника Canon</p>
-        <p>Минск, ул. Гикало, 1</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 284-02-03</a>
-          <a href="$">+375 44 764-02-03</a>
-          <a href="$">+375 29 876-87-78</a>
-        </div>
-
-        <p>ООО «Канцелярские машины» МФУ и принтеры Canon</p>
-        <p>г. Минск, ул. Минина, 21/А, к.2, офис 20</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 216-21-83</a>
-        </div>
         <div className={style.conteinerForThreeLogo}>
           <img
             src="https://cdn0.it4profit.com/pages/7/106/apple-logo-vector-02.jpg"

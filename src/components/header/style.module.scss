@@ -25,10 +25,17 @@
   text-align: center;
   align-items: center;
 }
+.btn {
+  margin: 0 10px;
+}
 .headContacts a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
   font-size: 13px;
+}
+
+.testStyle {
+  text-decoration: none;
 }
 .headContacts a > img {
   height: 15px;
@@ -50,18 +57,20 @@
 .linksContainer {
   height: 100%;
   display: grid;
-  width: 70%;
+  width: 79%;
   margin: 0 auto;
-  grid-template-columns: repeat(14, 1fr) 4fr;
+  grid-template-columns: repeat(9, 1fr) 4fr;
   justify-items: center;
   align-items: center;
 }
 
+.linksContainer a {
+  text-decoration: none !important;
+}
+
 .storeLinks a {
   text-decoration: none;
-
   color: rgb(255, 255, 255);
-
   font-size: 15px;
 }
 
@@ -80,4 +89,12 @@
   height: 30px;
   align-content: center;
   margin: 0 25px;
+}
+.dropMenu {
+  background-color: black;
+}
+
+.dropMenu a {
+  text-decoration: none !important;
+  color: white;
 }

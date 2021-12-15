@@ -3,6 +3,7 @@ import macPage from "./macConfig";
 import { useLocation } from "react-router";
 import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
 
+
 const Mac = () => {
   let location = useLocation();
 

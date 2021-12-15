@@ -5,7 +5,7 @@ import { useLocation } from "react-router";
 
 const Information = () => {
   let location = useLocation();
-
+  console.log(location);
   return (
     <>
       <RefBreadCrumb path={location.pathname} className={style.breadCrumb} />
