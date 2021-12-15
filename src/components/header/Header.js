@@ -116,12 +116,28 @@ const Header = (props) => {
                   Google или Facebook если активировали одну из этих функций
                   ранее
                 </div>
+                <div className={style.ourAdress}>
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Apple-256.png"
+                    alt="not found"
+                  ></img>
+                  <img
+                    src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/google_search_new_logo-256.png"
+                    alt="not found"
+                  ></img>
+                  <img
+                    src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_1-facebook-128.png"
+                    alt="not found"
+                  ></img>
+                </div>
+                <div className={style.registerLink}>
+                  <span>Нет аккаунта?</span>
+                  <a href="$">Зарегистрироваться</a>
+                </div>
               </div>
             </Modal>
           </>
         ) : (
-          // const [regModal, setRegModal] = useState(false);
-
           <div>
             <span>Ваш личный кабинет</span>
             <Button
