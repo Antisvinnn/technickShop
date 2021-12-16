@@ -31,9 +31,7 @@ const AppleWatch = () => {
           src="https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/plain/s3://catalog-categories/7/12225/apple_watch_se_gps_44mm_hero_6-up_print__usen-3.png@webp"
           alt="not found"
         ></img>
-        <div className={style.headText}>
-          <h1>Apple Watch</h1>
-        </div>
+        <h1 className={style.headText}>Apple Watch</h1>
       </div>
       <div className={style.navBlock}>{watchMap(appPage)}</div>
       <IStoreParthner />
