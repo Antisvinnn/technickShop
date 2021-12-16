@@ -1,4 +1,5 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
+import style from "./app.module.scss";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import BlackFriday from "./pages/blackfriday/BlackFriday";
@@ -9,11 +10,20 @@ import InfoRoadMap from "./pages/infoRoadMap/InfoRoadMap";
 import About from "./pages/about/About";
 import Contacts from "./components/iStoreContancts/Contacts";
 import Iphone from "./pages/iphone/Iphone";
+import { Modal, Button } from "antd";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [isAuth, setAuth] = useState(false);
+  const [isApply, setApply] = useState(true);
+  useEffect(() => {
+    setModalVisible(true);
+  }, []);
+  // alert("2" - 1);
   return (
     <>
-      <Header />
+      <Header authTools={{ auth: isAuth, setAuth: setAuth }} />
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/mac" component={Mac} />
@@ -25,6 +35,39 @@ const App = () => {
       </Switch>
       <Contacts />
       <Footer />
+      {!isApply && <Redirect to="*" />}
+      <Modal
+        className={style.containerModal}
+        footer={null}
+        centered
+        closable={false}
+        visible={modalVisible}
+      >
+        <div className={style.topic}>
+          <p>Вы авторизованы?</p>
+          <div>
+            <Button
+              type="primary"
+              onClick={() => {
+                setModalVisible(false);
+                setAuth(true);
+              }}
+            >
+              Да
+            </Button>
+            <Button
+              danger
+              type="primary"
+              onClick={() => {
+                setApply(false);
+                setModalVisible(false);
+              }}
+            >
+              Нет
+            </Button>
+          </div>
+        </div>
+      </Modal>
     </>
   );
 };
