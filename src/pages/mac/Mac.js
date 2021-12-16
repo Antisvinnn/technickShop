@@ -2,6 +2,7 @@ import style from "./style.module.scss";
 import macPage from "./macConfig";
 import { useLocation } from "react-router";
 import RefBreadCrumb from "../../components/refBreadCrumb/RefBreadCrumb";
+import IStoreParthner from "../../components/StoreParthner/IStoreParthner";
 
 const Mac = () => {
   let location = useLocation();
@@ -9,7 +10,7 @@ const Mac = () => {
   const macMap = (arr) => {
     return arr.map((el, index) => {
       return (
-        <a href="$" key={el.bottomText}>
+        <a href="$" className={el.secBlockStyle} key={el.bottomText}>
           {el.atrNew || el.atrDisc ? (
             <div className={el.atrClassName}>
               <h1 className={style.attrNewLabel}>{el.atrNew}</h1>
@@ -38,6 +39,7 @@ const Mac = () => {
         </div>
       </div>
       <div className={style.navBlock}>{macMap(macPage)}</div>
+      <IStoreParthner />
     </>
   );
 };

@@ -8,7 +8,7 @@ $mainTextColor: #231f20;
   padding: 40px 0 0 0;
 }
 .headBlock img {
-  margin: 55px 0 60px 155px;
+  margin: 55px 0 60px 240px;
 }
 .headBlock::after {
   position: absolute;
@@ -21,17 +21,19 @@ $mainTextColor: #231f20;
 }
 
 .navBlock {
-  display: flex;
-  margin: -70px 0 50px 0;
-  flex-wrap: wrap;
+  display: grid;
+  margin: -90px 0 50px 280px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
   justify-content: center;
   text-align: center;
+  width: 70%;
 }
 .navBlock > a {
   background-color: white;
   padding: 50px 0;
-  height: 150px;
-  width: 380px;
+  height: 190px;
+  width: 340px;
   transition: 0.3s linear;
   border: 1px solid black;
 }
@@ -69,4 +71,10 @@ $mainTextColor: #231f20;
 }
 .navBlock a > h3:hover {
   color: #0a84ff;
+}
+.secBlockFir {
+  grid-column: 2/3;
+}
+.secBlockSec {
+  grid-column: 3/4;
 }
