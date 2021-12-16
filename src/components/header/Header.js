@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.scss";
-import { Menu, Dropdown, Button } from "antd";
+import { Menu, Dropdown, Button, Modal, Input, Checkbox } from "antd";
 import { DownOutlined, ExportOutlined } from "@ant-design/icons";
+import { useState } from "react";
 
 const Header = (props) => {
+  const [regModal, setRegModal] = useState(false);
+  const [afirmPol, setAfirmPol] = useState(false);
   const menu = (
     <Menu className={style.dropMenu}>
       <Menu.Item>
@@ -60,13 +63,80 @@ const Header = (props) => {
           +375 (44) 5-590-364
         </a>
         {!props.authTools.auth ? (
-          <a href="$" className={style.persArea}>
-            <img
-              src="https://cdn2.iconfinder.com/data/icons/lightly-icons/30/user-240.png"
-              alt="not found"
-            ></img>
-            Личный кабинет
-          </a>
+          <>
+            <Button
+              className={style.regModalButton}
+              onClick={() => setRegModal(true)}
+            >
+              Авторизоваться
+            </Button>
+            <Modal
+              className={style.regModal}
+              centered
+              footer={null}
+              visible={regModal}
+              onCancel={() => setRegModal(false)}
+            >
+              <div className={style.registerBlock}>
+                <h1>Вход</h1>
+                <p>
+                  Для доступа в Ваш личный кабинет введите номер мобильного или
+                  e-mail.
+                </p>
+                <span className={style.phoneRegDiscr}>
+                  Введите номер мобильного телефона или E-mail*
+                </span>
+                <Input
+                  className={style.phoneReg}
+                  placeholder="+375 33 333-33-33"
+                />
+                <div className={style.politicsBlock}>
+                  <Checkbox
+                    className={style.politicInfo}
+                    onClick={() => {
+                      setAfirmPol((prev) => !prev);
+                    }}
+                  >
+                    Входя в аккаунт или создавая новый, вы соглашаетесь на
+                    обработку персональных данных в соответствии с
+                    <a href="$">политикой</a> и условиями <a href="$">оферты</a>
+                  </Checkbox>
+
+                  <Button
+                    className={afirmPol ? style.active : style.notAllow}
+                    type="primary"
+                    shape="round"
+                    block
+                  >
+                    Продолжить
+                  </Button>
+                </div>
+                <div className={style.discription}>
+                  или нажмите на кнопку ниже для быстрого входа с Apple или
+                  Google или Facebook если активировали одну из этих функций
+                  ранее
+                </div>
+                <div className={style.ourAdress}>
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Apple-256.png"
+                    alt="not found"
+                  ></img>
+                  <img
+                    src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/google_search_new_logo-256.png"
+                    alt="not found"
+                  ></img>
+                  <img
+                    src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_1-facebook-128.png"
+                    alt="not found"
+                  ></img>
+                </div>
+                <div className={style.registerLink}>
+                  <span>Нет аккаунта?</span>
+                  <a href="$">Зарегистрироваться</a>
+                </div>
+              </div>
+            </Modal>
+          </>
         ) : (
           <div>
             <span>Ваш личный кабинет</span>
