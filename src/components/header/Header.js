@@ -19,7 +19,7 @@ const Header = (props) => {
         <Link to="/iphone">iPhone</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="$">Watch</Link>
+        <Link to="/apple-watch">Watch</Link>
       </Menu.Item>
       <Menu.Item>
         <Link to="$">TV</Link>

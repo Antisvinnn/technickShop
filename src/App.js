@@ -8,6 +8,7 @@ import Main from "./pages/main/Main";
 import Page404 from "./pages/page404/Page404";
 import InfoRoadMap from "./pages/infoRoadMap/InfoRoadMap";
 import About from "./pages/about/About";
+import AppleWatch from "./pages/appleWatch/AppleWatch";
 import Contacts from "./components/iStoreContancts/Contacts";
 import Iphone from "./pages/iphone/Iphone";
 import { Modal, Button } from "antd";
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/mac" component={Mac} />
         <Route path="/iphone" component={Iphone} />
         <Route path="/blackFriday" component={BlackFriday} />
+        <Route path="/apple-watch" component={AppleWatch} />
         <Route path="/information" component={InfoRoadMap} />
         <Route path="/about" component={About} />
         <Route path="*" component={Page404} />
