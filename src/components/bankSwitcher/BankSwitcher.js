@@ -5,6 +5,7 @@ import comp from "../../assets/images/credits/comp.png";
 import compwithoutinet from "../../assets/images/credits/compwithoutinet.png";
 
 import { useState } from "react";
+import { Button } from "antd";
 
 const BankSwitcher = () => {
   const [state, setState] = useState(1);
@@ -300,7 +301,7 @@ const BankSwitcher = () => {
               </span>
               <p>СРОК КРЕДИТОВАНИЯ</p>
               <h3>До 36 месяцев включительно</h3>
-              <button>ИНСТРУКЦИЯ</button>
+              <Button type="primary">ИНСТРУКЦИЯ</Button>
             </div>
           </div>
           <div className={style.wrapperForTopics}>
