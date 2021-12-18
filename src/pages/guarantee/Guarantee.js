@@ -15,7 +15,10 @@ const Guarantee = () => {
           <p>{el.title}</p>
           <p>{el.adress}</p>
           <div className={style.numbers}>
-            <a href="$">{el.numbers}</a>
+            <a href="$">{el.number1}</a>
+            <a href="$">{el.number2}</a>
+            <a href="$">{el.number3}</a>
+            <a href="$">{el.number4}</a>
           </div>
         </>
       );
@@ -166,77 +169,6 @@ const Guarantee = () => {
       </div>
       <div className={style.conteinerForServiceCentres}>
         {service(ServiceCentres)}
-
-        <div className={style.conteinerForThreeLogo}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/apple-logo-vector-02.jpg"
-            alt="not found"
-          />
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/prestigio.jpg"
-            alt="not found"
-          />
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/bez_nazvaniya__1_.jpg"
-            alt="not found"
-          />
-        </div>
-
-        <p>СЦ «МастерPIN» (ООО «Кенфордбел»)</p>
-        <p>г. Минск, ул. Якуба Коласа, 1</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 388 90 09</a>
-          <a href="$">+375 29 334 09 09</a>
-          <a href="$">+375 33 300 09 09</a>
-          <a href="$">+375 25 900 09 09</a>
-        </div>
-        <div className={style.conteinerForLogoSingle}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/sennheiser.jpg"
-            alt="not found"
-          />
-        </div>
-        <p>ОДО «Микроэлектромеханика»</p>
-        <p>Минск, пр-т Рокоссовского, 80</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 368-82-92</a>
-          <a href="$">+375 25 608-06-80</a>
-        </div>
-        <div className={style.conteinerForLogoSony}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/bez_nazvaniya__1_.jpg"
-            alt="not found"
-          />
-        </div>
-
-        <p>
-          ОДО «Импорт-сервис» Авторизованный сервисный центр Panasonic, SONY
-        </p>
-        <p>Минск, ул. Кирова, д. 9</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 200-72-65</a>
-          <a href="$">+375 17 328-61-12</a>
-        </div>
-        <p>ЗАО «ЦТИ»</p>
-        <p>г. Минск, ул. Короля, д. 26</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 210-56-78</a>
-          <a href="$">+375 17 328-61-12</a>
-        </div>
-        <div className={style.conteinerForLogoSingle}>
-          <img
-            src="https://cdn0.it4profit.com/pages/7/106/urbanears.png"
-            alt="not found"
-          />
-        </div>
-
-        <p>ЧУП «Дримлайн»</p>
-        <p>г. Минск, ул. Кальварийская, 1-005</p>
-        <div className={style.numbers}>
-          <a href="$">+375 17 222-48-12</a>
-          <a href="$">+375 17 306-39-99</a>
-          <a href="$">+375 17 306-49-99</a>
-        </div>
       </div>
     </>
   );
