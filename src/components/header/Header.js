@@ -19,7 +19,7 @@ const Header = (props) => {
         <Link to="/iphone">iPhone</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="$">Watch</Link>
+        <Link to="/apple-watch">Watch</Link>
       </Menu.Item>
       <Menu.Item>
         <Link to="$">TV</Link>
@@ -99,7 +99,8 @@ const Header = (props) => {
                   >
                     Входя в аккаунт или создавая новый, вы соглашаетесь на
                     обработку персональных данных в соответствии с
-                    <a href="$">политикой</a> и условиями <a href="$">оферты</a>
+                    <a href="$"> политикой</a> и условиями{" "}
+                    <a href="$">оферты</a>
                   </Checkbox>
 
                   <Button
