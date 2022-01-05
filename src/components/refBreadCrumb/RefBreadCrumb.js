@@ -8,7 +8,6 @@ const RefBreadCrumb = ({ path }) => {
 	const elmentsOfPath = path.split('/');
 	elmentsOfPath.shift();
 	elmentsOfPath.unshift('/');
-	console.log(elmentsOfPath);
 	const renderBreadCrumb = (arr) => {
 		return arr.map((el) => {
 			return el === '/' ? (
@@ -19,7 +18,7 @@ const RefBreadCrumb = ({ path }) => {
 				</Breadcrumb.Item>
 			) : (
 				<Breadcrumb.Item key={el}>
-					<Link to={'/' + el.split('/').pop()}>
+					<Link to={'/' + el}>
 						<span className={style.information}>{el}</span>
 					</Link>
 				</Breadcrumb.Item>
